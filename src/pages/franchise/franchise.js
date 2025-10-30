@@ -156,7 +156,7 @@ function Franchise() {
       {/* Hero Section */}
       <div className="franchise-hero">
         <Header background="#DCADC9" />
-        <div className="franchise-content  text-start container py-6">
+        <div className="franchise-content text-start container py-6">
           <motion.h1
             className="display-5 mb-3 "
             variants={heroTextVariants}
@@ -173,7 +173,7 @@ function Franchise() {
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           >
             Bring the joy of fresh ice creams & salads to your city 
-            <br />
+            
             with our proven concept and support
           </motion.p>
         </div>

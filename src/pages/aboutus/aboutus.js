@@ -50,8 +50,8 @@ function AboutUs() {
             variants={textVariants}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            A place where indulgence and balance share the <br/>
-            same space — handcrafted ice creams and farm- <br/>
+            A place where indulgence and balance share the
+            same space — handcrafted ice creams and farm- 
             fresh salads made with love every day.
           </motion.p>
         </div>

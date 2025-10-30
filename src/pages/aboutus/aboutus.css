@@ -67,6 +67,7 @@ body {
   text-align: left;
   font-weight: 300;
   color: #fff;
+    max-width: 60%;
 }
 
 /* ===============================
@@ -315,6 +316,14 @@ section {
     margin-bottom: 10px;
     background-size: 80%;
   }
+  .aboutus-content p {
+    text-align: center;
+    max-width: 100%;
+  }
+  .aboutus-content h1 {
+    text-align: center;
+  }
+  
 }
 
 /* Tablets and small desktops */
@@ -333,6 +342,9 @@ section {
   }
   .aboutus-values-section {
                     padding: 60px 50px 70px 50px;
+  }
+    .aboutus-content p {
+    max-width: 95%;
   }
 }
 

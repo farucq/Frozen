@@ -98,7 +98,7 @@ function ContactUs() {
     <>
       <div className="contactus-hero">
         <Header background="#DCADC9" />
-        <div className="contactus-content text-center text-md-start container py-5">
+        <div className="contactus-content  text-md-start container py-5">
           <motion.h1
             className="display-5 mb-3 "
             variants={heroTextVariants}
@@ -115,7 +115,6 @@ function ContactUs() {
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           >
             Got a question, feedback, or just craving a frozen treat?
-            <br />
             Reach out to us anytime.
           </motion.p>
         </div>
