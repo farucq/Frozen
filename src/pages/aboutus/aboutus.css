@@ -1,0 +1,398 @@
+/* ===============================
+   GLOBAL STYLES
+=============================== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+/* ===============================
+   ABOUT US HERO SECTION
+=============================== */
+.aboutus-hero {
+  position: relative;
+  background-image: url('/public/assets/images/aboutus/image(114) 1 (1).png');
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.aboutus-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 18, 67, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.aboutus-hero .Header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.aboutus-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
+  margin: 60px auto 0;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.aboutus-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.aboutus-content p {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 2.188rem);
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* ===============================
+   FROZEN WORLD SECTION
+=============================== */
+.frozen-world-section {
+  min-height: 70vh;
+  background: url('/public/assets/images/aboutus/image\(116\)\ \(1\).png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.frozen-world-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(98, 18, 67, 0.3);
+  z-index: 1;
+}
+
+.frozen-world-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.frozen-world-title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  margin-bottom: 32px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.frozen-world-description {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0 auto;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 1100px;
+  color: #fff;
+}
+
+/* ===============================
+   ABOUT US CTA SECTION
+=============================== */
+.aboutus-cta-section {
+  min-height: 70vh;
+  background: url('/public/assets/images/aboutus/image - 2025-08-30T194302.098 (1).png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.aboutus-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(98, 18, 67, 0.2);
+  z-index: 1;
+}
+
+.aboutus-cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aboutus-cta-title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutus-cta-button {
+  background-color: #651243;
+  color: #fff;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 600;
+  padding: 14px 45px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(101, 18, 67, 0.3);
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.aboutus-cta-button:hover {
+  background-color: #501033;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(101, 18, 67, 0.4);
+}
+
+.aboutus-cta-button:active {
+  transform: translateY(0);
+}
+
+/* Remove default section spacing */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   ABOUT US VALUES SECTION
+=============================== */
+.aboutus-values-section {
+  background: #e7bddd;
+  padding: 48px 0 52px 0;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.aboutus-values-title {
+  font-family: 'Pacifico', cursive;
+  color: #651243;
+  font-size: 2.4rem;
+  margin-bottom: 46px;
+  letter-spacing: 1px;
+}
+
+.aboutus-values-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.aboutus-value-card {
+  background: #fff0fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(101,18,67,0.10);
+  padding: 38px 32px 28px 32px;
+  text-align: center;
+  border: 2px solid #892c73;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 240px;
+  transition: box-shadow 0.25s;
+  position: relative;
+  z-index: 2;
+}
+.aboutus-value-card:hover {
+  box-shadow: 0 6px 22px rgba(101,18,67,0.14);
+}
+
+.aboutus-value-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.aboutus-value-icon.basket {
+  background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T151725.255.png');
+}
+.aboutus-value-icon.icecream {
+  background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T151731.757.png');
+}
+.aboutus-value-icon.balance {
+  background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T153421.860 1.png');
+}
+.aboutus-value-icon.community {
+  background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T153721.649 1.png');
+}
+
+.aboutus-value-heading {
+  font-weight: 700;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: 1.45rem;
+  color: #651243;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.aboutus-value-card p {
+  font-size: 1.02rem;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-weight: 400;
+  color: #651243;
+  line-height: 1.6;
+}
+
+/* ===============================
+   RESPONSIVE BREAKPOINTS
+=============================== */
+
+/* Extra small devices (mobiles) */
+@media (max-width: 600px) {
+  .aboutus-values-section {
+    padding: 20px 0 24px 0;
+  }
+  .aboutus-values-title {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+  .aboutus-values-cards {
+    grid-template-columns: 1fr;
+    gap: 28px 0;
+    max-width: 80%;
+  }
+  .aboutus-value-card {
+    min-height: 150px;
+    padding: 28px 16px 20px 16px;
+  }
+  .aboutus-value-heading {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .aboutus-value-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-size: 80%;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 601px) and (max-width: 1200px) {
+  .aboutus-values-cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 960px;
+    gap: 30px 40px;
+  }
+  .aboutus-values-title {
+    font-size: clamp(2.0rem, 1.5vw + 0.5rem, 2.8rem);
+  }
+  .aboutus-value-card {
+    min-height: 220px;
+    padding: 34px 28px 26px 28px;
+  }
+  .aboutus-values-section {
+                    padding: 60px 50px 70px 50px;
+  }
+}
+
+/* Large desktops, 2K screens */
+@media (min-width: 1201px) and (max-width: 2559px) {
+  .aboutus-values-section {
+            padding: 60px 50px 70px 50px;
+  }
+  .aboutus-values-title {
+    font-size: clamp(2.6rem, 2vw + 1rem, 4rem);
+    margin-bottom: 60px;
+  }
+  .aboutus-values-cards {
+    max-width: 1400px;
+    gap: 40px 60px;
+  }
+  .aboutus-value-card {
+    min-height: 280px;
+    padding: 40px 36px 32px 36px;
+  }
+  .aboutus-value-heading {
+    font-size: clamp(1.8rem, 1vw + 0.75rem, 2.2rem);
+  }
+  .aboutus-value-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 22px;
+  }
+  .aboutus-value-card p {
+    font-size: clamp(1.2rem, 1vw + 0.4rem, 1.4rem);
+  }
+}
+
+/* Ultra HD and 4K displays */
+@media (min-width: 2560px) {
+  .aboutus-values-section {
+    padding: 80px 0 100px 0;
+  }
+  .aboutus-values-title {
+    font-size: 4.5rem;
+    margin-bottom: 70px;
+  }
+  .aboutus-values-cards {
+    max-width: 1800px;
+    gap: 60px 80px;
+  }
+  .aboutus-value-card {
+    min-height: 340px;
+    padding: 52px 48px 44px 48px;
+  }
+  .aboutus-value-heading {
+    font-size: 2.5rem;
+    margin-bottom: 26px;
+  }
+  .aboutus-value-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 28px;
+  }
+  .aboutus-value-card p {
+    font-size: 1.6rem;
+  }
+}

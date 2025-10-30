@@ -1,0 +1,287 @@
+/* ========================================
+   FRANCHISE HERO SECTION
+   ======================================== */
+.franchise-hero {
+  background-image: url('/public/assets/images/franchise/image\ -\ 2025-08-30T131547.822\ 1.png');
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+}
+.franchise-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 18, 67, 0.5); /* #651243 at 50% opacity */
+  z-index: 1;
+}
+
+.franchise-hero .Header {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+.franchise-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
+  margin: 60px 0 0 70px;
+  padding-top: 90px;
+  padding-left: 0px !important;  /* Add this */
+  padding-right: 20px !important; /* Add this */
+}
+
+/* Headline style */
+.franchise-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
+  font-weight: 100;            /* Changed from 100 to 400 */
+  margin-bottom: 32px;
+  text-align: left;
+  margin-left: 0;              /* Add this */
+  padding-left: 0;             /* Add this */
+}
+
+/* Paragraph style */
+.franchise-content p {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 2rem);
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 300;
+  margin-left: 0;              /* Add this */
+  padding-left: 0; 
+  color: #fff;            /* Add this */
+}
+
+
+/* ========================================
+   FRANCHISE FORM SECTION
+   ======================================== */
+.franchiseform-hero {
+  min-height: auto;
+  background: url('/public/assets/images/franchise/image\ -\ 2025-09-16T130603.488\ 1\ \(1\).png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow-x: hidden;
+  overflow: visible !important; 
+}
+
+.franchiseform-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 18, 66, 0.40);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.franchiseform-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================================
+   FRANCHISE CTA SECTION
+   ======================================== */
+.franchise-cta {
+  min-height: 60vh;
+  background: url('/public/assets/images/franchise/image\ -\ 2025-08-30T131547.822\ 1.png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.franchise-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 18, 67, 0.4);
+  z-index: 1;
+}
+
+.franchise-cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+}
+
+.franchise-cta-title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.franchise-cta-subtitle {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* ========================================
+   MOBILE MENU FIX
+   ======================================== */
+.navbar-collapse {
+  z-index: 1050;
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .franchise-content {
+    margin-top: 40px;
+    padding-top: 60px;
+    margin-left: 20px;
+  }
+
+  .franchiseform-hero {
+    min-height: 100vh;
+    padding: 40px 15px;
+    overflow-y: auto;
+  }
+
+  .franchise-cta {
+    min-height: 50vh;
+    padding: 60px 15px;
+  }
+
+  .franchise-cta-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .franchise-cta-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .franchise-content {
+    max-width: 700px;
+    padding-top: 200px;
+  }
+
+  .franchiseform-hero {
+    padding: 70px 30px;
+  }
+
+  .franchise-cta {
+    min-height: 55vh;
+    padding: 70px 30px;
+  }
+}
+
+/* Laptop/Desktop (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .franchise-content {
+    max-width: 850px;
+  }
+
+  .franchiseform-hero {
+    padding: 80px 40px;
+  }
+
+  .franchise-cta {
+    min-height: 60vh;
+    padding: 90px 40px;
+  }
+}
+
+/* Large Desktop / 2K (1441px to 2559px) */
+@media (min-width: 1441px) and (max-width: 2559px) {
+  .franchise-content {
+    max-width: 1200px;
+  }
+
+  .franchise-content h1 {
+    font-size: 4rem;
+  }
+
+  .franchise-content p {
+    font-size: 2.2rem;
+  }
+
+  .franchiseform-hero {
+    padding: 100px 60px;
+  }
+
+  .franchise-cta {
+    min-height: 65vh;
+    padding: 100px 60px;
+  }
+
+  .franchise-cta-title {
+    font-size: 4rem;
+  }
+
+  .franchise-cta-subtitle {
+    font-size: 2rem;
+  }
+}
+
+/* 4K / Ultra HD (2560px and above) */
+@media (min-width: 2560px) {
+  .franchise-content {
+    max-width: 1800px;
+  }
+
+  .franchise-content h1 {
+    font-size: 5rem;
+  }
+
+  .franchise-content p {
+    font-size: 3rem;
+  }
+
+  .franchiseform-hero {
+    padding: 120px 80px;
+  }
+
+  .franchise-cta {
+    min-height: 70vh;
+    padding: 120px 80px;
+  }
+
+  .franchise-cta-content {
+    max-width: 1500px;
+  }
+
+  .franchise-cta-title {
+    font-size: 5rem;
+  }
+
+  .franchise-cta-subtitle {
+    font-size: 2.5rem;
+  }
+}

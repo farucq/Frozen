@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Pacifico&family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* ===============================
+   BLOG PAGE BASE STYLING
+   =============================== */
+.blog1 {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f2cce4;
+  color: #3a2f2f;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+/* ===============================
+   BLOG HERO SECTION
+   =============================== */
+.blog-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 18, 67, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.blog-hero .Header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.blog-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
+  margin: 60px auto 0;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.blog-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.blog-content p {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 2.188rem);
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 300;
+  color: #fff;
+  max-width: 60%;
+  
+}
+
+/* ===============================
+   CONTENT SECTION
+   =============================== */
+.content-section {
+  background-color: #dcadc9;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-family: "Pacifico", cursive;
+  color: #6a1b4d;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: #3a2f2f;
+}
+
+.contentLeft {
+  padding-left: 4rem !important;
+}
+
+.contentRight {
+  padding-right: 4rem !important;
+}
+
+.content-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.content-img:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .contentLeft,
+  .contentRight {
+    padding: 0 2rem !important;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-content {
+    max-width: 95%;
+    margin: 40px auto 0;
+    padding-top: 60px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .blog-content h1,
+  .blog-content p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .blog-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .blog-content p {
+    font-size: 1.1rem;
+  }
+
+  .content-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .contentLeft,
+  .contentRight {
+    padding: 0 1rem !important;
+  }
+
+  img.content-img {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  .blog-content {
+    max-width: 1200px;
+    padding-left: 64px;
+  }
+
+  .blog-content h1 {
+    font-size: 4rem;
+  }
+
+  .blog-content p {
+    font-size: 2.2rem;   
+  }
+}

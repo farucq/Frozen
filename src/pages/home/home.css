@@ -1,0 +1,2670 @@
+.Home {
+  overflow-x: hidden;
+}
+
+.Banner {
+  width: 100vw;
+  /* height: 70vh; */
+  color: var(--white);
+  min-height: 940px;
+  font-family: "Josefin Sans", sans-serif;
+  background: var(--gradient-light-orange);
+}
+
+.Banner .banner-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 160px;
+  position: relative;
+}
+
+.Banner .banner-left,
+.Banner .banner-center {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.Banner .banner-left {
+  padding-left: 90px;
+  max-width: 40%;
+}
+
+.Banner .banner-center {
+  max-width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Banner .banner-right {
+  width: 360px;
+  padding-top: 50px;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* !Banner Center */
+.Banner .big-cake {
+  width: 565px;
+  height: 565px;
+}
+
+/* !Banner Left */
+
+.Banner .heading h2:nth-child(2) {
+  padding: 5px 0px 0px 20px;
+}
+
+.Banner h2 {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 37px;
+}
+
+.Banner .at-frozen {
+  padding: 20px 0px 0px 20px;
+  font-weight: 500;
+  font-size: 22px;
+  width: 400px;
+  color: var(--black);
+}
+
+.Banner .shop-now {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  margin: 10px 0px 0px 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Banner .bowl-image {
+  margin: 20px 0px 0px -40px;
+  overflow: visible;
+}
+
+.Banner .strawberry-bowl {
+  width: 455px;
+  height: 278px;
+}
+
+.Banner .banner-mangos {
+  width: 354px;
+  height: 236px;
+}
+
+.Banner .banner-vegetables {
+  width: 317px;
+  height: 317px;
+}
+
+/* !Banner Right */
+
+/* !Cheese Cake */
+.Banner .cheese-cake {
+  background-color: var(--chocolate);
+  border-radius: 0px;
+  height: 100px;
+  width: 340px;
+  cursor: pointer;
+}
+
+.Banner .cheese-cake .card-body {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.Banner .cheese-cake .small-cake {
+  width: 150px;
+  height: 150px;
+  margin: -25px 0px 0px -50px;
+}
+
+.Banner .cheese-cake p {
+  font-family: "Pacifico", sans-serif;
+  margin-top: -15px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--white);
+}
+
+/* !Ice Cream */
+.Banner .ice-cream {
+  background-color: var(--earthy-brow);
+  margin-top: 70px;
+  border-radius: 0px;
+  height: 100px;
+  width: 340px;
+  cursor: pointer;
+}
+
+.Banner .ice-cream .card-body {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.Banner .ice-cream .small-icecream {
+  width: 150px;
+  height: 150px;
+  margin: -25px 0px 0px -50px;
+}
+
+.Banner .ice-cream p {
+  font-family: "Pacifico", sans-serif;
+  text-align: start;
+  margin-top: -15px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--white);
+}
+
+/* !Veg Salad */
+.Banner .veg-salad {
+  background-color: var(--earthy-brown);
+  margin-top: 70px;
+  border-radius: 0px;
+  height: 100px;
+  width: 340px;
+  cursor: pointer;
+}
+
+.Banner .veg-salad .card-body {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.Banner .veg-salad .small-veg-salad {
+  width: 150px;
+  height: 150px;
+  margin: -25px 0px 0px -50px;
+}
+
+.Banner .veg-salad p {
+  font-family: "Pacifico", sans-serif;
+  text-align: start;
+  margin-top: -15px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--white);
+}
+
+.Banner .crafted-with {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--eerie-black);
+  padding-top: 60px;
+  width: 425px;
+}
+
+/* !Banner Positioning Images */
+
+.Banner .top-left-blueberry {
+  position: absolute;
+  top: -110px;
+  left: 0px;
+  width: 64.68px;
+  height: 67.58px;
+}
+
+.Banner .top-left-mango {
+  position: absolute;
+  top: -165px;
+  left: -50px;
+  width: 164px;
+  height: 130px;
+}
+
+.Banner .top-left-vegetable {
+  position: absolute;
+  top: -155px;
+  left: -35px;
+  width: 164px;
+  height: 130px;
+}
+
+.Banner .bottom-left-strawberry {
+  position: absolute;
+  top: 340px;
+  left: 0px;
+  width: 100px;
+  height: 120px;
+}
+
+.Banner .bottom-left-mango {
+  position: absolute;
+  top: 340px;
+  left: -30px;
+  width: 120px;
+  height: 130px;
+}
+
+.Banner .bottom-left-vegetable {
+  position: absolute;
+  top: 300px;
+  left: -90px;
+  width: 240px;
+  height: 190px;
+  transform: scaleX(-1) !important;
+}
+
+.Banner .top-right-blueberry {
+  position: absolute;
+  top: 50px;
+  left: 490px;
+  width: 59px;
+  height: 62px;
+}
+
+.Banner .top-right-mango {
+  position: absolute;
+  top: 0px;
+  left: 420px;
+  width: 180px;
+  height: 150px;
+  transform: rotate(230deg);
+}
+
+.Banner .top-right-vegetable {
+  position: absolute;
+  top: 0px;
+  left: 430px;
+  width: 160px;
+  height: 150px;
+}
+
+.Banner .bottom-right-blueberry {
+  position: absolute;
+  bottom: 290px;
+  left: 400px;
+  width: 59px;
+  height: 62px;
+}
+
+.Banner .bottom-right-mango {
+  position: absolute;
+  bottom: 230px;
+  left: 380px;
+  width: 160px;
+  height: 130px;
+}
+
+.Banner .bottom-right-vegetable {
+  position: absolute;
+  bottom: 290px;
+  left: 350px;
+  width: 150px;
+  height: 120px;
+}
+
+/* !Banner Positioning Between Small & Big Images */
+.Banner .top--left--strawberry {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 120px;
+  height: 159.12px;
+}
+
+.Banner .top--left--mango {
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 190px;
+  height: 160px;
+  transform: rotate(80deg);
+}
+
+.Banner .top--left--vegetable {
+  position: absolute;
+  top: -20px;
+  left: -80px;
+  width: 270x;
+  height: 240px;
+}
+
+.Banner .top--right--strawberry {
+  position: absolute;
+  top: -60px;
+  right: -20px;
+  width: 110px;
+  height: 170px;
+}
+
+.Banner .top--right--mango {
+  position: absolute;
+  top: -100px;
+  right: 10px;
+  width: 153px;
+  height: 224px;
+}
+
+.Banner .top--right--vegetable {
+  position: absolute;
+  top: -100px;
+  right: 10px;
+  width: 180px;
+  height: 240px;
+}
+
+.Banner .sliced-strawberries {
+  position: absolute;
+  bottom: -55px;
+  right: 30px;
+  width: 128px;
+  height: 85px;
+}
+
+.Banner .mangos-group {
+  position: absolute;
+  bottom: -75px;
+  right: 30px;
+  width: 128px;
+  height: 85px;
+}
+
+.Banner .vegetables-group {
+  position: absolute;
+  bottom: -55px;
+  right: 30px;
+  width: 128px;
+  height: 85px;
+}
+/* !--------------------------------------------------------------------------- */
+
+.AboutUs {
+  color: var(--white);
+  min-height: 685px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  background: var(--gradient-warm-bronze),
+    url("/public/assets/images/home/about-us-bg.png") center center / cover
+      no-repeat;
+  backdrop-filter: blur(4.599999904632568px);
+  padding: 3rem 2rem;
+}
+
+.AboutUs .row {
+  align-items: center;
+}
+
+.AboutUs .row div:nth-child(1) {
+  text-align: end;
+  align-self: center;
+}
+
+.AboutUs .row div:nth-child(2) {
+  text-align: start;
+}
+
+.AboutUs img {
+  /* width: 628px; */
+  /* height: 510px; */
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.AboutUs img:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease-out;
+}
+
+.AboutUs .heading-initial {
+  font-family: "Dancing Script", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin-right: -3px;
+  padding-bottom: 34px;
+  padding-left: 43px;
+}
+
+.AboutUs .heading {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding-bottom: 34px;
+}
+
+.AboutUs .what-happens p {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--white);
+  padding-left: 43px;
+}
+
+.AboutUs .at-frozen p {
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--black);
+  padding-left: 43px;
+}
+
+.AboutUs .some-stories p {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--black);
+  padding-left: 43px;
+}
+
+.AboutUs .view-more-btn {
+  padding-left: 43px;
+}
+
+.AboutUs .view-more {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+}
+/* !--------------------------------------------------------------------------- */
+
+.FavTreat {
+  color: var(--white);
+  min-height: 1000px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-light-orange);
+}
+
+.FavTreat .heading {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  color: var(--white);
+  padding-bottom: 34px;
+}
+
+.FavTreat .from-scoops {
+  justify-self: center;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  color: var(--black);
+  width: 838px;
+}
+
+.FavTreat .fav-treat-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.FavTreat .horizontal-scroll-wrapper {
+  width: 48%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 3rem 3rem;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.FavTreat .horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.FavTreat .fav-treat-grid {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+}
+
+.FavTreat .card {
+  scroll-snap-align: start;
+  background-color: var(--peach-frost);
+  border-radius: 15px;
+  position: relative;
+  margin-top: 125px;
+  width: 313px !important;
+  height: 349px;
+}
+
+.FavTreat .card:hover {
+  background: var(--gradient-light-orange);
+  transform: scale(1.1);
+}
+
+.FavTreat .card:hover h3 {
+  color: var(--white);
+}
+
+.FavTreat .card:hover p {
+  font-weight: 400;
+}
+
+.FavTreat .card h3,
+.FavTreat .card p {
+  transition: all 0.3s ease;
+}
+
+.FavTreat .card .cheese-top-left-hover-image {
+  position: absolute;
+  top: 140px;
+  left: -30px;
+  width: 44px;
+  height: 46px;
+}
+
+.FavTreat .card .ice-top-left-hover-image {
+  position: absolute;
+  top: 130px;
+  left: -55px;
+  width: 109px;
+  height: 86px;
+}
+
+.FavTreat .card .veg-top-left-hover-image {
+  position: absolute;
+  top: 140px;
+  left: -40px;
+  width: 79px;
+  height: 66px;
+}
+
+.FavTreat .card .cheese-top-right-hover-image {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  width: 97px;
+  height: 103px;
+  transform: scaleX(-1);
+}
+
+.FavTreat .card .ice-top-right-hover-image {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  width: 98px;
+  height: 98px;
+}
+
+.FavTreat .card .veg-top-right-hover-image {
+  position: absolute;
+  top: 110px;
+  right: -15px;
+  width: 106px;
+  height: 100px;
+}
+
+.FavTreat .card .cheese-bottom-left-hover-image {
+  position: absolute;
+  bottom: 0px;
+  left: -30px;
+  width: 90px;
+  height: 113px;
+}
+
+.FavTreat .card .ice-bottom-left-hover-image {
+  position: absolute;
+  bottom: 20px;
+  left: -25px;
+  width: 64px;
+  height: 64px;
+}
+
+.FavTreat .card .veg-bottom-left-hover-image {
+  position: absolute;
+  bottom: -20px;
+  left: -60px;
+  width: 116px;
+  height: 110px;
+  transform: scaleX(-1);
+}
+
+.FavTreat .card .cheese-bottom-right-hover-image {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  width: 38px;
+  height: 40px;
+}
+
+.FavTreat .card .ice-bottom-right-hover-image {
+  position: absolute;
+  bottom: 10px;
+  right: -30px;
+  width: 126px;
+  height: 100px;
+}
+
+.FavTreat .card .veg-bottom-right-hover-image {
+  position: absolute;
+  bottom: 0px;
+  right: -15px;
+  width: 113px;
+  height: 96px;
+}
+
+.FavTreat .card img {
+  margin: -100px 0px 0px 45px;
+  width: 206px;
+  height: 206px;
+}
+
+.FavTreat .card h3 {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: start;
+  padding: 17px 0 14px 35px;
+}
+
+.FavTreat .card p {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-align: start;
+  padding: 0 0 10px 35px;
+}
+
+.FavTreat .order-now {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  margin: 0 auto;
+}
+/* !--------------------------------------------------------------------------- */
+
+.Dessert {
+  color: var(--white);
+  min-height: 669px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-chocolate),
+    url("/public/assets/images/home/dessert-bg.png") center center / cover
+      no-repeat;
+  backdrop-filter: blur(2px);
+}
+
+.Dessert h2 {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+}
+
+.Dessert p {
+  justify-self: center;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--frosted-white);
+  width: 775px;
+  padding: 24px 0 32px;
+}
+
+.Dessert .order-now {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 400;
+}
+/* !--------------------------------------------------------------------------- */
+
+.Expand-cards {
+  font-family: "Josefin Sans", sans-serif;
+  /* min-height: 900px; */
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-light-orange);
+}
+
+.Expand-cards .head-text {
+  text-align: center;
+}
+
+.Expand-cards .head-text h2 {
+  font-family: "Pacifico", sans-serif;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.Expand-cards .head-text p {
+  justify-self: center;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  max-width: 1235px;
+  color: var(--black);
+}
+
+.Expand-cards .expand-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.Expand-cards .card {
+  width: 80px;
+  border-radius: 27px;
+  box-shadow: 0px 4px 4px 0px var(--transparnet-low-black);
+  cursor: pointer;
+  color: var(--white);
+  background: var(--burnt-caramel);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  overflow: visible;
+}
+
+.Expand-cards .card.active,
+.Expand-cards .card-title.active {
+  color: var(--black);
+}
+
+.Expand-cards .card-title {
+  font-family: "Akaya Kanadaka", sans-serif;
+  transform: rotate(-180deg);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
+}
+
+.Expand-cards .content-panel {
+  width: 73%;
+  align-content: center;
+  background: var(--peach-glaze);
+  border-radius: 34px;
+  box-shadow: 0px 4px 4px 0px var(--transparnet-low-black);
+  padding: 20px 30px;
+  animation: fadeIn 1s ease;
+}
+
+.Expand-cards .content-panel .row {
+  align-items: center;
+}
+
+.Expand-cards .content-panel img {
+  width: 90%;
+  height: 90%;
+  border: 0.2px solid var(--transparnet-black);
+  box-shadow: 0px 4px 4px 0px var(--transparnet-low-black);
+  border-radius: 33px;
+}
+
+.Expand-cards .content-panel img:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease-out;
+}
+
+.Expand-cards .content-panel h2 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.Expand-cards .content-panel p {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.Expand-cards .order-now {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* !--------------------------------------------------------------------------- */
+
+.Rewards {
+  color: var(--white);
+  min-height: 707px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  background: var(--gradient-light-orange);
+  padding: 30px 4rem;
+}
+
+.Rewards .container-fluid {
+  position: relative;
+}
+
+.Rewards .container-fluid .row {
+  align-items: center;
+}
+/* 
+.Rewards .container-fluid .row div:nth-child(1) {
+  padding-left: 4rem;
+}
+
+.Rewards .container-fluid .row div:nth-child(2) {
+  padding-right: 4rem;
+} */
+
+.Rewards .offer-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.Rewards .offer-image:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease-out;
+}
+
+.Rewards h2 {
+  font-family: "Pacifico", sans-serif;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--white);
+}
+
+.Rewards .join-our {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--black);
+}
+
+.Rewards .get-ready {
+  font-family: "Akaya Kanadaka", sans-serif;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--black);
+}
+
+.Rewards .order-now {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--chocolate);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.Rewards .hand-ice {
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  width: 250px;
+  height: 350px;
+}
+/* !--------------------------------------------------------------------------- */
+
+/* !Extra small: <576px */
+@media (max-width: 576px) {
+  .Banner .banner-layout {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+  }
+
+  .Banner .banner-left {
+    max-width: 100%;
+    text-align: center;
+    flex: none;
+    padding: 0;
+  }
+
+  .Banner .banner-center {
+    max-width: 70%;
+    align-items: start;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .Banner .banner-right {
+    max-width: 20%;
+    padding-top: 20px;
+  }
+
+  .Banner .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Banner h2 {
+    font-size: 18px;
+  }
+
+  .Banner .heading h2:nth-child(2) {
+    padding: 5px 0 0 8px;
+  }
+
+  .Banner .at-frozen {
+    width: 100%;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .Banner .banner-left .shop-now {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .Banner .banner-center .shop-now {
+    margin: 0 0 0 0px;
+    font-size: 8px;
+    white-space: nowrap;
+    display: none;
+  }
+
+  .Banner .big-cake {
+    width: 252px;
+    height: 252px;
+    margin-top: -60px;
+  }
+
+  .Banner .strawberry-bowl {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    bottom: -100px;
+  }
+
+  .Banner .banner-mangos {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    bottom: -140px;
+  }
+
+  .Banner .banner-vegetables {
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    left: 20px;
+    bottom: -140px;
+  }
+
+  .Banner .cheese-cake {
+    width: 100%;
+    height: 50px;
+  }
+
+  .Banner .cheese-cake .small-cake {
+    width: 70px;
+    height: 70px;
+    margin: -10px 0px 0px -55px;
+  }
+
+  .Banner .cheese-cake p {
+    margin-top: 0px;
+    font-size: 8px;
+  }
+
+  .Banner .ice-cream {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  .Banner .ice-cream .small-icecream {
+    width: 70px;
+    height: 70px;
+    margin: -10px 0px 0px -55px;
+  }
+
+  .Banner .ice-cream p {
+    margin-top: 0px;
+    font-size: 9px;
+  }
+
+  .Banner .veg-salad {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  .Banner .veg-salad .small-veg-salad {
+    width: 70px;
+    height: 70px;
+    margin: -10px 0px 0px -55px;
+  }
+
+  .Banner .veg-salad p {
+    margin-top: 0px;
+    font-size: 9px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 10px;
+    width: 170%;
+  }
+
+  .Banner .top-left-blueberry {
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .top-right-blueberry {
+    position: absolute;
+    top: 160px;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .bottom-left-strawberry {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .Banner .bottom-right-blueberry {
+    position: absolute;
+    bottom: 70px;
+    left: 180px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .top-right-mango {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .top-left-mango {
+    position: absolute;
+    top: -150px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-right-mango {
+    position: absolute;
+    bottom: 50px;
+    left: 190px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .Banner .bottom-left-mango {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .Banner .top-right-vegetable {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .top-left-vegetable {
+    position: absolute;
+    top: -150px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-right-vegetable {
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-left-vegetable {
+    position: absolute;
+    top: 420px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    transform: scaleX(-1) !important;
+  }
+
+  .Banner .top--left--strawberry {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .Banner .top--left--mango {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(80deg);
+  }
+
+  .Banner .top--left--vegetable {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    width: 130x;
+    height: 130px;
+  }
+
+  .Banner .top--right--strawberry {
+    position: absolute;
+    top: -160px;
+    right: 70px;
+    width: 80px;
+    height: 80px;
+    transform: scaleX(-1) !important;
+  }
+
+  .Banner .top--right--mango {
+    position: absolute;
+    top: -150px;
+    right: 75px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .top--right--vegetable {
+    position: absolute;
+    top: -160px;
+    right: 70px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .sliced-strawberries {
+    position: absolute;
+    bottom: -55px;
+    right: 0px;
+    width: 100px;
+    height: 80px;
+  }
+
+  .Banner .mangos-group {
+    position: absolute;
+    bottom: -75px;
+    right: 0px;
+    width: 100px;
+    height: 80px;
+  }
+
+  .Banner .vegetables-group {
+    position: absolute;
+    bottom: -55px;
+    right: 0px;
+    width: 100px;
+    height: 80px;
+  }
+
+  .AboutUs .row div:nth-child(1) {
+    text-align: center;
+  }
+
+  .AboutUs .row div:nth-child(2) {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .AboutUs .d-flex {
+    justify-content: center;
+  }
+
+  .AboutUs img {
+    padding: 20px 0;
+    border-radius: 40px;
+    /* width: 380px;
+    height: 380px; */
+  }
+
+  .AboutUs .heading-initial,
+  .AboutUs .heading {
+    padding-bottom: 0px;
+    font-size: 22px;
+  }
+
+  .AboutUs .what-happens p,
+  .AboutUs .at-frozen p,
+  .AboutUs .some-stories p {
+    padding: 0px 10px;
+    font-size: 16px;
+  }
+
+  .FavTreat .heading {
+    font-size: 22px;
+  }
+
+  .FavTreat .from-scoops {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .FavTreat .horizontal-scroll-wrapper {
+    width: 14%;
+  }
+
+  .FavTreat .card h3 {
+    font-size: 18px;
+  }
+
+  .FavTreat .card p {
+    font-size: 16px;
+  }
+
+  .FavTreat .card .order-now {
+    font-size: 16px;
+  }
+
+  .Dessert h2 {
+    font-size: 22px;
+  }
+
+  .Dessert p {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .Dessert .order-now {
+    font-size: 20px;
+  }
+
+  .Expand-cards {
+    padding: 0;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 22px;
+    padding-top: 30px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 16px;
+  }
+
+  .Expand-cards .card {
+    width: 35px;
+  }
+
+  .Expand-cards .card-title {
+    font-size: 16px;
+  }
+
+  .Expand-cards .content-panel {
+    width: 33%;
+    padding: 10px;
+  }
+
+  .Expand-cards .content-panel div:nth-child(1) {
+    text-align: center;
+  }
+
+  .Expand-cards .content-panel img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 10px;
+    padding-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Expand-cards .order-now {
+    font-size: 8px;
+  }
+
+  .Rewards h2 {
+    font-size: 22px;
+  }
+
+  .Rewards .join-our {
+    font-size: 16px;
+  }
+
+  .Rewards .get-ready {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+
+  .Rewards .row div:nth-child(2) {
+    text-align: center;
+    padding: 0px 0 40px;
+  }
+
+  .Rewards .offer-image {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    display: block;
+  }
+
+  .Rewards .hand-ice {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 150px;
+    height: 250px;
+  }
+}
+
+/* !Small: ≥577px and <768px */
+@media (min-width: 576px) and (max-width: 768px) {
+  .Banner .banner-left {
+    max-width: 40%;
+    padding: 0 0 0 20px;
+  }
+
+  .Banner .banner-center {
+    width: 25%;
+  }
+
+  .Banner .banner-right {
+    width: 25%;
+  }
+
+  .Banner h2 {
+    font-size: 22px;
+  }
+
+  .Banner .at-frozen {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .Banner .strawberry-bowl {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Banner .banner-mangos {
+    padding: 40px 0 0 50px;
+    max-width: 80%;
+    height: 80%;
+  }
+
+  .Banner .banner-vegetables {
+    padding: 40px 0 0 50px;
+    width: 70%;
+    height: 70%;
+  }
+
+  .Banner .big-cake {
+    width: 170%;
+    height: 170%;
+  }
+
+  .Banner .cheese-cake {
+    width: 100%;
+    height: 75px;
+  }
+
+  .Banner .cheese-cake .small-cake {
+    width: 100px;
+    height: 100px;
+    margin: -15px 0px 0px -55px;
+  }
+
+  .Banner .cheese-cake p {
+    font-size: 12px;
+  }
+
+  .Banner .ice-cream {
+    width: 100%;
+    height: 75px;
+  }
+
+  .Banner .ice-cream .small-icecream {
+    width: 100px;
+    height: 100px;
+    margin: -15px 0px 0px -55px;
+  }
+
+  .Banner .ice-cream p {
+    font-size: 14px;
+  }
+
+  .Banner .veg-salad {
+    width: 100%;
+    height: 75px;
+  }
+
+  .Banner .veg-salad .small-veg-salad {
+    width: 100px;
+    height: 100px;
+    margin: -15px 0px 0px -55px;
+  }
+
+  .Banner .veg-salad p {
+    font-size: 12px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Banner .top-left-blueberry {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .top-right-blueberry {
+    position: absolute;
+    top: 110px;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .bottom-left-strawberry {
+    position: absolute;
+    top: 360px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .Banner .bottom-right-blueberry {
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Banner .top-right-mango {
+    position: absolute;
+    top: 110px;
+    left: 240px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .top-left-mango {
+    position: absolute;
+    top: -160px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .bottom-right-mango {
+    position: absolute;
+    bottom: 260px;
+    left: 180px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-left-mango {
+    position: absolute;
+    top: 360px;
+    left: -10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .top-right-vegetable {
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .top-left-vegetable {
+    position: absolute;
+    top: -155px;
+    left: -35px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-right-vegetable {
+    position: absolute;
+    bottom: 280px;
+    left: 180px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Banner .bottom-left-vegetable {
+    position: absolute;
+    top: 340px;
+    left: -20px;
+    width: 120px;
+    height: 120px;
+    transform: scaleX(-1) !important;
+  }
+
+  .Banner .top--left--strawberry {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .top--left--mango {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(80deg);
+  }
+
+  .Banner .top--left--vegetable {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120x;
+    height: 120px;
+  }
+
+  .Banner .top--right--strawberry {
+    position: absolute;
+    top: -60px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .top--right--mango {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Banner .top--right--vegetable {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .AboutUs .row div:nth-child(1) {
+    text-align: center;
+  }
+
+  .AboutUs .row div:nth-child(2) {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .AboutUs .d-flex {
+    justify-content: center;
+  }
+
+  .AboutUs img {
+    width: 70%;
+    height: 70%;
+    padding: 20px 0;
+    border-radius: 40px;
+  }
+
+  .AboutUs .heading-initial,
+  .AboutUs .heading {
+    padding-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .AboutUs .what-happens p,
+  .AboutUs .at-frozen p,
+  .AboutUs .some-stories p {
+    font-size: 22px;
+  }
+
+  .AboutUs .view-more-btn {
+    padding-bottom: 25px;
+  }
+
+  .FavTreat .heading {
+    font-size: 30px;
+  }
+
+  .FavTreat .from-scoops {
+    font-size: 22px;
+    width: 750px;
+  }
+
+  .FavTreat .horizontal-scroll-wrapper {
+    width: 30%;
+  }
+
+  .Dessert h2 {
+    font-size: 30px;
+  }
+
+  .Dessert p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .card {
+    width: 40px;
+  }
+
+  .Expand-cards .card-title {
+    font-size: 22px;
+  }
+
+  .Expand-cards .content-panel {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .Expand-cards .content-panel div:nth-child(1) {
+    text-align: center;
+  }
+
+  .Expand-cards .content-panel img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Expand-cards .order-now {
+    font-size: 14px;
+  }
+
+  .Rewards h2 {
+    font-size: 30px;
+  }
+
+  .Rewards .join-our,
+  .Rewards .get-ready {
+    font-size: 22px;
+  }
+
+  .Rewards .row div:nth-child(2) {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .Rewards .offer-image {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    display: block;
+  }
+
+  .Rewards .hand-ice {
+    position: absolute;
+    bottom: -40px;
+    right: 0px;
+    width: 250px;
+    height: 350px;
+  }
+}
+
+/* !Medium: ≥768px and <1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Banner .banner-left {
+    max-width: 40%;
+  }
+
+  .Banner .banner-center {
+    width: 25%;
+  }
+
+  .Banner .banner-right {
+    width: 25%;
+  }
+
+  .Banner h2 {
+    font-size: 30px;
+  }
+
+  .Banner .at-frozen {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .Banner .strawberry-bowl {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Banner .banner-mangos {
+    max-width: 90%;
+    height: 90%;
+  }
+
+  .Banner .banner-vegetables {
+    width: 80%;
+    height: 80%;
+  }
+
+  .Banner .big-cake {
+    width: 180%;
+    height: 180%;
+  }
+
+  .Banner .cheese-cake {
+    width: 100%;
+  }
+
+  .Banner .cheese-cake p {
+    font-size: 12px;
+  }
+
+  .Banner .ice-cream {
+    width: 100%;
+  }
+
+  .Banner .ice-cream p {
+    font-size: 14px;
+  }
+
+  .Banner .veg-salad {
+    width: 100%;
+  }
+
+  .Banner .veg-salad p {
+    font-size: 12px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Banner .top-left-blueberry {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Banner .top-right-blueberry {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+  }
+
+  .Banner .bottom-left-strawberry {
+    position: absolute;
+    top: 340px;
+    left: 0px;
+  }
+
+  .Banner .bottom-right-blueberry {
+    position: absolute;
+    bottom: 300px;
+    left: 280px;
+  }
+
+  .Banner .top-right-mango {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+  }
+
+  .Banner .bottom-right-mango {
+    position: absolute;
+    bottom: 250px;
+    left: 240px;
+  }
+
+  .Banner .top-right-vegetable {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+  }
+
+  .Banner .bottom-right-vegetable {
+    position: absolute;
+    bottom: 260px;
+    left: 240px;
+  }
+
+  .AboutUs .container-fluid .row div:nth-child(1),
+  .AboutUs .container-fluid .row div:nth-child(2) {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .AboutUs img {
+    width: 60%;
+    height: 60%;
+    padding: 40px 0;
+  }
+
+  .AboutUs .heading-initial,
+  .AboutUs .heading {
+    font-size: 30px;
+  }
+
+  .AboutUs .what-happens p,
+  .AboutUs .at-frozen p,
+  .AboutUs .some-stories p {
+    font-size: 22px;
+  }
+
+  .AboutUs .view-more-btn {
+    padding-bottom: 25px;
+  }
+
+  .FavTreat .heading {
+    font-size: 30px;
+  }
+
+  .FavTreat .from-scoops {
+    font-size: 22px;
+  }
+
+  .FavTreat .horizontal-scroll-wrapper {
+    width: 30%;
+  }
+
+  .Dessert h2 {
+    font-size: 30px;
+  }
+
+  .Dessert p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 30px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .card {
+    width: 50px;
+  }
+
+  .Expand-cards .card-title {
+    font-size: 30px;
+  }
+
+  .Expand-cards .content-panel {
+    width: 57%;
+    text-align: center;
+  }
+
+  .Expand-cards .content-panel .row div:nth-child(1) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .Expand-cards .content-panel img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 22px;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Expand-cards .order-now {
+    font-size: 16px;
+  }
+
+  .Rewards .container-fluid .row div:nth-child(1),
+  .Rewards .container-fluid .row div:nth-child(2) {
+    text-align: center;
+    justify-items: center;
+    padding: 20px 0;
+  }
+
+  .Rewards h2 {
+    font-size: 30px;
+  }
+
+  .Rewards .join-our,
+  .Rewards .get-ready {
+    font-size: 22px;
+  }
+
+  .Rewards .offer-image {
+    width: 60%;
+    height: 60%;
+    display: block;
+  }
+
+  .Rewards .hand-ice {
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    width: 200px;
+    height: 300px;
+  }
+}
+
+/* !Large: ≥1024px and <1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .Banner {
+    height: 100vh;
+  }
+
+  .Banner .banner-left {
+    max-width: 40%;
+  }
+
+  .Banner .banner-center {
+    width: 25%;
+  }
+
+  .Banner .banner-right {
+    width: 25%;
+  }
+
+  .Banner h2 {
+    font-size: 30px;
+  }
+
+  .Banner .at-frozen {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .Banner .strawberry-bowl {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Banner .banner-mangos {
+    max-width: 90%;
+    height: 90%;
+  }
+
+  .Banner .banner-vegetables {
+    width: 80%;
+    height: 80%;
+  }
+
+  .Banner .big-cake {
+    width: 180%;
+    height: 180%;
+  }
+
+  .Banner .cheese-cake {
+    width: 100%;
+  }
+
+  .Banner .cheese-cake p {
+    font-size: 12px;
+  }
+
+  .Banner .ice-cream {
+    width: 100%;
+  }
+
+  .Banner .ice-cream p {
+    font-size: 14px;
+  }
+
+  .Banner .veg-salad {
+    width: 100%;
+  }
+
+  .Banner .veg-salad p {
+    font-size: 12px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .Banner .top-left-blueberry {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Banner .top-right-blueberry {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+  }
+
+  .Banner .bottom-left-strawberry {
+    position: absolute;
+    top: 340px;
+    left: 0px;
+  }
+
+  .Banner .bottom-right-blueberry {
+    position: absolute;
+    bottom: 300px;
+    left: 280px;
+  }
+
+  .Banner .top-right-mango {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+  }
+
+  .Banner .bottom-right-mango {
+    position: absolute;
+    bottom: 250px;
+    left: 240px;
+  }
+
+  .Banner .top-right-vegetable {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+  }
+
+  .Banner .bottom-right-vegetable {
+    position: absolute;
+    bottom: 260px;
+    left: 240px;
+  }
+
+  .AboutUs .heading-initial,
+  .AboutUs .heading {
+    font-size: 30px;
+  }
+
+  .AboutUs .what-happens p,
+  .AboutUs .at-frozen p,
+  .AboutUs .some-stories p {
+    font-size: 22px;
+  }
+
+  .FavTreat .heading {
+    font-size: 30px;
+  }
+
+  .FavTreat .from-scoops {
+    font-size: 22px;
+  }
+
+  .FavTreat .horizontal-scroll-wrapper {
+    width: 47%;
+  }
+
+  .Dessert h2 {
+    font-size: 30px;
+  }
+
+  .Dessert p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 30px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 22px;
+  }
+
+  .Expand-cards .card {
+    width: 60px;
+  }
+
+  .Expand-cards .card-title {
+    font-size: 30px;
+  }
+
+  .Expand-cards .content-panel {
+    width: 66%;
+  }
+
+  .Expand-cards .content-panel img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 25px;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 18px;
+  }
+
+  .Expand-cards .order-now {
+    font-size: 22px;
+  }
+
+  .Rewards h2 {
+    font-size: 30px;
+  }
+
+  .Rewards .join-our,
+  .Rewards .get-ready {
+    font-size: 22px;
+  }
+
+  .Rewards .hand-ice {
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    width: 250px;
+    height: 350px;
+  }
+}
+
+/* !Extra Large: ≥1200px and <1440px */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .Banner {
+    height: 100vh;
+  }
+
+  .Banner .banner-left {
+    max-width: 40%;
+  }
+
+  .Banner .banner-center {
+    width: 25%;
+  }
+
+  .Banner .banner-right {
+    width: 25%;
+  }
+
+  .Banner .at-frozen {
+    width: 80%;
+  }
+
+  .Banner .strawberry-bowl {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Banner .banner-mangos {
+    max-width: 75%;
+    height: 75%;
+  }
+
+  .Banner .banner-vegetables {
+    width: 65%;
+    height: 65%;
+  }
+
+  .Banner .big-cake {
+    width: 170%;
+    height: 170%;
+  }
+
+  .Banner .cheese-cake {
+    width: 100%;
+  }
+
+  .Banner .ice-cream {
+    width: 100%;
+  }
+
+  .Banner .veg-salad {
+    width: 100%;
+  }
+
+  .FavTreat .horizontal-scroll-wrapper {
+    width: 48%;
+  }
+
+  .Expand-cards .card {
+    width: 60px;
+  }
+
+  .Expand-cards .content-panel {
+    width: 73%;
+  }
+
+  .Expand-cards .content-panel img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ! ≥1441px and <1920px*/
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .Banner {
+    height: 100vh;
+  }
+
+  .Banner .banner-left {
+    max-width: 35%;
+  }
+
+  .Banner .banner-center {
+    width: 30%;
+  }
+
+  .Banner .banner-right {
+    width: 30%;
+  }
+
+  .Banner .big-cake {
+    width: 625px;
+    height: 625px;
+  }
+
+  .Banner h2 {
+    font-size: 48px;
+  }
+
+  .Banner .at-frozen {
+    font-size: 26px;
+    width: 90%;
+  }
+
+  .Banner .shop-now {
+    font-size: 26px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 26px;
+    width: 500px;
+  }
+
+  .Banner .cheese-cake p {
+    font-size: 26px;
+  }
+
+  .Banner .ice-cream p {
+    font-size: 26px;
+  }
+
+  .Banner .veg-salad p {
+    font-size: 26px;
+  }
+
+  .Banner .top-right-mango {
+    left: 520px;
+  }
+
+  .AboutUs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .AboutUs .heading,
+  .AboutUs .heading-initial {
+    font-size: 48px;
+  }
+
+  .AboutUs .what-happens p {
+    font-size: 32px;
+  }
+
+  .AboutUs .at-frozen p {
+    font-size: 32px;
+  }
+
+  .AboutUs .some-stories p {
+    font-size: 32px;
+  }
+
+  .AboutUs .view-more {
+    font-size: 26px;
+  }
+
+  .FavTreat .card {
+    width: 425px !important;
+    height: 400px;
+  }
+
+  .FavTreat .card img {
+    margin-left: 100px;
+  }
+
+  .FavTreat .card h3 {
+    font-size: 30px;
+  }
+
+  .FavTreat .card p {
+    font-size: 25px;
+  }
+
+  .FavTreat .card .order-now {
+    font-size: 26px;
+  }
+
+  .Dessert p {
+    font-size: 40px;
+  }
+
+  .Dessert .order-now {
+    font-size: 26px;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 58px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 45px;
+  }
+
+  .Expand-cards .expand-container {
+    padding: 40px 0px;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 40px;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 30px;
+  }
+
+  .Expand-cards .content-panel .order-now {
+    font-size: 26px;
+  }
+
+  .Rewards h2 {
+    font-size: 58px;
+  }
+
+  .Rewards .join-our {
+    font-size: 40px;
+  }
+
+  .Rewards .get-ready {
+    font-size: 35px;
+  }
+
+  .Rewards .order-now {
+    font-size: 26px;
+  }
+
+  .Rewards .hand-ice {
+    width: 300px;
+    height: 400px;
+    bottom: 0px;
+  }
+}
+
+/* ! ≥1921px and <2560px*/
+@media (min-width: 1921px) {
+  .Banner {
+    height: 70vh;
+  }
+
+  .Banner .banner-left {
+    max-width: 35%;
+  }
+
+  .Banner .banner-center {
+    width: 30%;
+  }
+
+  .Banner .banner-right {
+    width: 30%;
+  }
+
+  .Banner .big-cake {
+    width: 650px;
+    height: 650px;
+  }
+
+  .Banner h2 {
+    font-size: 58px;
+  }
+
+  .Banner .at-frozen {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .Banner .shop-now {
+    font-size: 30px;
+  }
+
+  .Banner .crafted-with {
+    font-size: 30px;
+    width: 600px;
+  }
+
+  .Banner .cheese-cake p,
+  .Banner .ice-cream p,
+  .Banner .veg-salad p {
+    font-size: 30px;
+  }
+
+  .Banner .top-right-blueberry {
+    left: 610px;
+  }
+
+  .Banner .top-right-mango {
+    left: 620px;
+  }
+
+  .Banner .top-right-vegetable {
+    left: 525px;
+  }
+
+  .AboutUs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .AboutUs .heading,
+  .AboutUs .heading-initial {
+    font-size: 65px;
+  }
+
+  .AboutUs .what-happens p,
+  .AboutUs .at-frozen p,
+  .AboutUs .some-stories p {
+    font-size: 40px;
+  }
+
+  .AboutUs .view-more {
+    font-size: 30px;
+  }
+
+  .FavTreat .heading {
+    font-size: 65px;
+  }
+
+  .FavTreat .from-scoops {
+    font-size: 50px;
+    width: 1500px;
+    padding-bottom: 25px;
+  }
+
+  .FavTreat .card {
+    width: 525px !important;
+    height: 500px;
+  }
+
+  .FavTreat .card img {
+    width: 250px;
+    height: 250px;
+    margin-left: 135px;
+    margin-top: -130px;
+  }
+
+  .FavTreat .card h3 {
+    font-size: 40px;
+  }
+
+  .FavTreat .card p {
+    font-size: 30px;
+  }
+
+  .FavTreat .card .order-now {
+    font-size: 30px;
+  }
+
+  .Dessert h2 {
+    font-size: 65px;
+  }
+
+  .Dessert p {
+    font-size: 45px;
+  }
+
+  .Dessert .order-now {
+    font-size: 30px;
+  }
+
+  .Expand-cards .head-text h2 {
+    font-size: 65px;
+  }
+
+  .Expand-cards .head-text p {
+    font-size: 50px;
+  }
+
+  .Expand-cards .expand-container {
+    padding: 40px 0px;
+  }
+
+  .Expand-cards .content-panel h2 {
+    font-size: 58px;
+  }
+
+  .Expand-cards .content-panel p {
+    font-size: 40px;
+  }
+
+  .Expand-cards .content-panel .order-now {
+    font-size: 30px;
+  }
+
+  .Rewards h2 {
+    font-size: 65px;
+  }
+
+  .Rewards .join-our {
+    font-size: 45px;
+  }
+
+  .Rewards .get-ready {
+    font-size: 40px;
+  }
+
+  .Rewards .order-now {
+    font-size: 30px;
+  }
+
+  .Rewards .hand-ice {
+    width: 400px;
+    height: 500px;
+    bottom: 0px;
+  }
+}

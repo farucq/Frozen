@@ -1,0 +1,340 @@
+/* ------------------ Global Styles ------------------ */
+body, html {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ------------------ Timeline Section ------------------ */
+.timeline-section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: transparent;
+}
+
+/* Fixed background */
+.timeline-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/public/assets/images/aboutus/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  transform: scale(1.05);
+  will-change: filter, transform;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.timeline-background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.08) 0%,
+    rgba(101,18,67,0.05) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Content scrolls above background */
+.timeline-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 20px 150px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ------------------ Titles ------------------ */
+.timeline-main-title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ------------------ Timeline Line ------------------ */
+.timeline-container {
+  position: relative;
+  padding: 30px 0 80px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    rgba(101, 18, 67, 0.3),
+    rgba(101, 18, 67, 0.8),
+    rgba(101, 18, 67, 0.8),
+    rgba(101, 18, 67, 0.3)
+  );
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* ------------------ Timeline Items ------------------ */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  min-height: 280px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+  padding-right: 45%;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+  padding-left: 45%;
+}
+
+/* Use margin-left on the left side card */
+.timeline-item.left .timeline-card {
+  margin-left: 30%; /* margin on left side */
+  margin-right: 0;
+}
+
+/* Use margin-right on the right side card */
+.timeline-item.right .timeline-card {
+  margin-right: 30%; /* margin on right side */
+  margin-left: 0;
+}
+
+/* ------------------ Pointer ------------------ */
+.timeline-pointer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-dot {
+  width: 40px;
+  height: 38px;
+  background: #fff;
+  border: 6px solid #651243;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+
+.timeline-item.left .timeline-arrow {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 18px 34px 18px 0;
+  border-color: transparent #fff transparent transparent;
+  margin-right: -2px;
+}
+
+.timeline-item.right .timeline-arrow {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 18px 0 18px 34px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: -2px;
+}
+
+/* ------------------ Cards ------------------ */
+.timeline-card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  width: 50%;
+  max-width: 320px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.timeline-card:hover {
+  box-shadow: 0 15px 50px rgba(101,18,67,0.4);
+  transform: translateY(-5px);
+}
+
+.timeline-card-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.timeline-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  user-select: none;
+  pointer-events: none;
+}
+
+.timeline-card:hover .timeline-card-image {
+  transform: scale(1.1);
+}
+
+.timeline-card-content {
+  padding: 20px;
+}
+
+.timeline-card-title {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.timeline-card-description {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+  color: #000000;
+  line-height: 1.6;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* ------------------ Responsive Breakpoints ------------------ */
+
+/* 📱 Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .timeline-line {
+    left: 20px;
+    display: none;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center; /* center items */
+    padding: 0; /* remove left padding */
+    margin-bottom: 60px;
+  }
+
+  .timeline-card {
+    width: 100%;
+    max-width: none;
+    margin-left: auto;  /* center horizontally */
+    margin-right: auto; /* center horizontally */
+  }
+
+  .timeline-pointer {
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .timeline-dot {
+    width: 0px;
+    height: 0px;
+    border: 1x solid #651243;
+    display: none;
+  }
+
+  .timeline-item.left .timeline-arrow,
+  .timeline-item.right .timeline-arrow {
+    display: none;
+  }
+
+  .timeline-main-title {
+    font-size: 2rem;
+  }
+}
+
+
+/* 💻 Tablets (601px–992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .timeline-card {
+    width: 70%;
+    max-width: 400px;
+  }
+
+  .timeline-item.left {
+    padding-right: 45%;
+  }
+
+  .timeline-item.right {
+    padding-left: 45%;
+  }
+    .timeline-line {
+    left: 20px;
+    display: none;
+  }
+   .timeline-pointer {
+    left: 10px;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .timeline-dot {
+    width: 0px;
+    height: 0px;
+    border: 1x solid #651243;
+    display: none;
+  }
+}
+
+
+/* 🖥️ Laptops (993px–1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .timeline-card {
+    max-width: 360px;
+  }
+
+  .timeline-item {
+    min-height: 250px;
+    
+  }
+   .timeline-item.left {
+    padding-right: 45%;
+  }
+
+  .timeline-item.right {
+    padding-left: 45%;
+  }
+}
+
+/* 🖥️ Large Desktops (1201px+) */
+@media (min-width: 1201px) {
+  .timeline-card {
+    max-width: 400px;
+  }
+   .timeline-item.left {
+    padding-right: 45%;
+  }
+
+  .timeline-item.right {
+    padding-left: 45%;
+  }
+}

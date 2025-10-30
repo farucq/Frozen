@@ -1,0 +1,398 @@
+/* ==== BASE ==== */
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: transparent; /* So it blends over hero image */
+}
+
+.Header .container {
+  width: 100%;
+  max-width: 1280px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  justify-content: center;
+  background-color: var(--light-brown);
+  border: 1px solid var(--transparent-black);
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.Header .container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.Header li {
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  justify-content: center;
+  color: var(--dark-charcoal);
+  transition: color 0.3s ease;
+  font-family: "Josefin Sans", sans-serif;
+  white-space: nowrap;
+}
+
+/* ==== LOGOS ==== */
+.Header .Wolf {
+  width: 86px;
+  height: 129px;
+  object-fit: contain;
+  margin: -35px -25px 0 0;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.Header .Logo {
+  width: 148px;
+  height: 77px;
+  object-fit: contain;
+  margin: 10px 0 0 0;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* ==== MOBILE HEADER ==== */
+.Header .mobile-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+ 
+  margin: 0 auto;
+}
+
+.Header .mobile-header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.Header .navbar-toggler {
+  z-index: 1001;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Header .navbar-toggler:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* ==== MOBILE MENU ==== */
+.Header .mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background: var(--light-brown);
+  animation-fill-mode: forwards;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.Header .mobile-menu ul {
+  display: flex !important;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+  gap: 15px;
+}
+
+.Header .mobile-menu li {
+  width: 100%;
+  text-align: center;
+}
+
+.Header .mobile-menu .nav-link,
+.Header .mobile-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: var(--dark-charcoal);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.Header .mobile-menu .nav-link:hover,
+.Header .mobile-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.Header .mobile-menu.slide-down {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.Header .mobile-menu.slide-up {
+  animation: slideUp 0.3s ease forwards;
+  pointer-events: none;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* ===================== */
+/* RESPONSIVE QUERIES    */
+/* ===================== */
+
+/* 📱 Mobile (<768px): Use hamburger menu */
+@media (max-width: 768px) {
+  .Header {
+    position: relative;
+    overflow: visible;
+  }
+
+  .Header .container {
+    display: none !important;
+  }
+
+  .Header .mobile-header {
+    display: flex !important;
+    max-width: 95%;
+  }
+
+  .Header .mobile-header .Logo {
+    width: 120px;
+    height: 60px;
+    margin: 0;
+  }
+
+  .Header .mobile-header .Wolf {
+    width: 60px;
+    height: 90px;
+    margin: -20px -10px 0 0;
+  }
+
+  .Header .mobile-menu li {
+    font-size: 18px;
+  }
+
+  .Header .mobile-menu .nav-link,
+  .Header .mobile-menu a {
+    font-size: 16px;
+  }
+}
+
+/* 💻 Tablets (769px–900px): Smaller navbar items to prevent overflow */
+@media (min-width: 769px) and (max-width: 900px) {
+  .Header .container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    padding: 0 10px;
+    max-width: 98%;
+  }
+
+  .Header .container ul {
+    display: flex !important;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+
+  .Header .mobile-header {
+    display: none !important;
+  }
+
+  .Header li {
+    font-size: 14px;
+    padding: 4px 6px;
+    flex-shrink: 1;
+  }
+
+  .Header li a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .Header .Wolf {
+    width: 50px;
+    height: 75px;
+    margin: -22px -12px 0 0;
+  }
+
+  .Header .Logo {
+    width: 95px;
+    height: 50px;
+    margin: 5px 0 0 0;
+  }
+}
+
+/* 💻 Tablets (901px–1024px): Normal sizing */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .Header .container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    height: 65px;
+    padding: 0 20px;
+    max-width: 95%;
+  }
+
+  .Header .container ul {
+    display: flex !important;
+    gap: 15px;
+  }
+
+  .Header .mobile-header {
+    display: none !important;
+  }
+
+  .Header li {
+    font-size: 18px;
+  }
+
+  .Header .Wolf {
+    width: 70px;
+    height: 105px;
+    margin: -30px -20px 0 0;
+  }
+
+  .Header .Logo {
+    width: 125px;
+    height: 65px;
+    margin: 8px 0 0 0;
+  }
+}
+
+/* 🖥️ Large (1025px–1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Header .container {
+    max-width: 1100px;
+    height: 70px;
+  }
+  
+  .Header .container ul {
+    gap: 20px;
+  }
+  
+  .Header li {
+    font-size: 20px;
+  }
+  
+  .Header .Wolf {
+    width: 80px;
+    height: 120px;
+    margin: -32px -22px 0 0;
+  }
+  
+  .Header .Logo {
+    width: 140px;
+    height: 72px;
+    margin: 10px 0 0 0;
+  }
+}
+
+/* 🖥️ Extra Large (1441px–1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .Header .container {
+    max-width: 1440px;
+    height: 75px;
+  }
+  
+  .Header .container ul {
+    gap: 25px;
+  }
+  
+  .Header li {
+    font-size: 24px;
+  }
+  
+  .Header .Wolf {
+    width: 100px;
+    height: 150px;
+    margin: -40px -25px 0 0;
+  }
+  
+  .Header .Logo {
+    width: 160px;
+    height: 100px;
+    margin: 10px 0 0 0;
+  }
+}
+
+/* 🖥️ Ultra Wide (1921px+) */
+@media (min-width: 1921px) {
+  .Header .container {
+    max-width: 1800px;
+    height: 80px;
+  }
+  
+  .Header .container ul {
+    gap: 30px;
+  }
+  
+  .Header li {
+    font-size: 26px;
+  }
+  
+  .Header .Wolf {
+    width: 110px;
+    height: 160px;
+    margin: -45px -28px 0 0;
+  }
+  
+  .Header .Logo {
+    width: 170px;
+    height: 110px;
+    margin: 10px 0 0 0;
+  }
+}
