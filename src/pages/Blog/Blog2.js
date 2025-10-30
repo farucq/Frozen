@@ -27,7 +27,7 @@ useEffect(() => {
       window.scrollTo(0, 0);
       // Step 3: Restore smooth scroll (for user-initiated scrolls later)
       html.style.scrollBehavior = prevBehavior || "smooth";
-    }, 1); // 100ms ensures animations still trigger properly
+    }, 55); // 55ms ensures animations still trigger properly
 
     return () => clearTimeout(timeout);
   }, []);

@@ -17,6 +17,10 @@ html, body {
   color: #3a2f2f;
   overflow-x: hidden !important;
   width: 100%;
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 /* ===============================
@@ -87,6 +91,8 @@ html, body {
 .content-section {
   background-color: #dcadc9;
   padding: 5rem 0;
+  flex: 1; /* ensures footer stays at bottom naturally */
+  padding-bottom: 6rem; /* add enough space for footer transition */
 }
 
 .section-title {
@@ -195,4 +201,8 @@ p {
   .blog-content p {
     font-size: 2.2rem;   
   }
+}
+
+footer {
+  margin-top: auto;
 }

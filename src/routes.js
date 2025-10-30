@@ -17,9 +17,9 @@ const AppRoutes = () => {
        <Route path="/franchise" element={<Franchise />} /> 
        <Route path="/gallery" element={<ComingSoon />} /> 
        <Route path="/rewards" element={<ComingSoon />} /> 
-       <Route path="/blog/1" element={<Blog1 />} />
+       <Route path="/blog/1" element={<Blog3 />} />
         <Route path="/blog/2" element={<Blog2 />} />
-        <Route path="/blog/3" element={<Blog3 />} />
+        <Route path="/blog/3" element={<Blog1 />} />
     </Routes>
   );
 };
