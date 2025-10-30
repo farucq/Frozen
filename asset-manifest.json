@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Frozen/static/css/main.fee4a136.css",
+    "main.js": "/Frozen/static/js/main.5578fb94.js",
+    "static/js/453.327c873e.chunk.js": "/Frozen/static/js/453.327c873e.chunk.js",
+    "static/media/unsplash_-uRc7LXsfSk_imgupscaler.ai_General_16K 1 (1).png": "/Frozen/static/media/unsplash_-uRc7LXsfSk_imgupscaler.ai_General_16K 1 (1).db5c5d1c55ae4cb079bc.png",
+    "static/media/about-us-bg.png": "/Frozen/static/media/about-us-bg.9a01633c12189e121dcb.png",
+    "static/media/dessert-bg.png": "/Frozen/static/media/dessert-bg.5925b64f76c8742ff776.png",
+    "static/media/footer-bg.png": "/Frozen/static/media/footer-bg.c238de12e3d73fe03019.png",
+    "static/media/bg.png": "/Frozen/static/media/bg.fe38606e2f5cd8f924e4.png",
+    "static/media/image(114) 1 (1).png": "/Frozen/static/media/image(114) 1 (1).7ae68a1779a53aea9e57.png",
+    "static/media/image - 2025-08-30T194302.098 (1).png": "/Frozen/static/media/image - 2025-08-30T194302.098 (1).e05f51a3c143dd1678e5.png",
+    "static/media/image - 2025-09-16T130603.488 1 (1).png": "/Frozen/static/media/image - 2025-09-16T130603.488 1 (1).cddec6eed29218be616a.png",
+    "static/media/image(116) (1).png": "/Frozen/static/media/image(116) (1).5976fb24c76069b48f73.png",
+    "static/media/image - 2025-08-30T131547.822 1.png": "/Frozen/static/media/image - 2025-08-30T131547.822 1.557e739ba954d2249600.png",
+    "static/media/aboutus1.png.png": "/Frozen/static/media/aboutus1.png.9e2c55157c761362f520.png",
+    "static/media/AkayaKanadaka-Regular.ttf": "/Frozen/static/media/AkayaKanadaka-Regular.0b25ac19ed13fb0cfd07.ttf",
+    "static/media/Pacifico-Regular.ttf": "/Frozen/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/WhatsApp Image 2025-10-27 at 15.14.42_560ab8d2.jpg": "/Frozen/static/media/WhatsApp Image 2025-10-27 at 15.14.42_560ab8d2.70ee2d5e359a3ec8072d.jpg",
+    "static/media/DancingScript-Regular.ttf": "/Frozen/static/media/DancingScript-Regular.7e203cef1079837be7e0.ttf",
+    "static/media/JosefinSans-Medium.ttf": "/Frozen/static/media/JosefinSans-Medium.6acb31ecdc655cf728f6.ttf",
+    "static/media/JosefinSans-SemiBold.ttf": "/Frozen/static/media/JosefinSans-SemiBold.083cff14d19f607b1df6.ttf",
+    "static/media/JosefinSans-Regular.ttf": "/Frozen/static/media/JosefinSans-Regular.a2ce5b60f6f65ab57473.ttf",
+    "static/media/JosefinSans-Light.ttf": "/Frozen/static/media/JosefinSans-Light.56f11e87f77c0a251691.ttf",
+    "static/media/image - 2025-09-04T153721.649 1.png": "/Frozen/static/media/image - 2025-09-04T153721.649 1.a93ab0ca25f000c78d51.png",
+    "static/media/image - 2025-09-04T151731.757.png": "/Frozen/static/media/image - 2025-09-04T151731.757.bc9520cc56dd7c61d48a.png",
+    "static/media/image - 2025-09-04T151725.255.png": "/Frozen/static/media/image - 2025-09-04T151725.255.ebc634872800906a7f2d.png",
+    "static/media/image - 2025-09-04T153421.860 1.png": "/Frozen/static/media/image - 2025-09-04T153421.860 1.198aa54f8e549b1e5e85.png",
+    "index.html": "/Frozen/index.html",
+    "main.fee4a136.css.map": "/Frozen/static/css/main.fee4a136.css.map",
+    "main.5578fb94.js.map": "/Frozen/static/js/main.5578fb94.js.map",
+    "453.327c873e.chunk.js.map": "/Frozen/static/js/453.327c873e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fee4a136.css",
+    "static/js/main.5578fb94.js"
+  ]
+}
