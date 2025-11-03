@@ -179,6 +179,9 @@
     min-height: 50vh;
     padding: 60px 15px;
   }
+  .franchise-hero{
+    min-height: 85vh;
+  }
 
   .franchise-cta-title {
     font-size: 1.8rem;
@@ -195,6 +198,9 @@
   .franchise-content {
     max-width: 700px;
     padding-top: 200px;
+  }
+  .franchise-hero{
+    min-height: 85vh;
   }
 
   .franchiseform-hero {
