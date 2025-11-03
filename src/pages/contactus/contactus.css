@@ -380,3 +380,8 @@ text-align: center;
         max-width: 4020px;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .contactus-hero{
+    min-height: 85vh;
+  }}
