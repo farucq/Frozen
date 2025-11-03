@@ -40,7 +40,6 @@
   padding-top: 90px;
   padding-left: 0px !important;  /* Add this */
   padding-right: 20px !important; /* Add this */
-  
 }
 
 /* Headline style */
@@ -63,9 +62,7 @@
   text-align: left;
   font-weight: 300;
   margin-left: 0;              /* Add this */
-  padding-left: 0; 
-  color: #fff;    
-  max-width: 70%;        /* Add this */
+  padding-left: 0;             /* Add this */
 }
 
 
@@ -144,7 +141,6 @@
   line-height: 1.6;
   margin: 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-  color: #fff;
 }
 
 /* ========================================
@@ -161,13 +157,16 @@
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .franchise-content {
-    margin-top: 40px;
+  
     padding-top: 60px;
     margin-left: 20px;
   }
-  .franchise-content h1 , .franchise-content p {
-    text-align: center;
-    max-width: 100%;
+  .franchise-hero {
+    min-height: 90vh;
+  }
+.franchise-content {
+    margin-top: 100px;
+    
   }
   .franchiseform-hero {
     min-height: 100vh;
@@ -195,14 +194,15 @@
   .franchise-content {
     max-width: 700px;
     padding-top: 200px;
+    margin-top: 100px;
   }
-
+  .franchise-hero {
+    min-height: 90vh;
+  }
   .franchiseform-hero {
     padding: 70px 30px;
   }
-.franchise-content h1 , .franchise-content p {
-    max-width: 100%;
-}
+
   .franchise-cta {
     min-height: 55vh;
     padding: 70px 30px;
