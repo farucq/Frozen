@@ -60,10 +60,9 @@ body, html {
   font-size: clamp(1.25rem, 2vw + 0.25rem, 2rem);
   line-height: 1.4;
   margin-bottom: 0;
- color:#fff;
+ 
   text-align: left;
   font-weight: 300;
-  max-width: 60%;
 }
 
 /* Contact form section */
@@ -245,6 +244,9 @@ body, html {
     padding: 0 4vw;
     gap: 20px;
   }
+  .contactus-hero {
+    min-height: 90vh;
+  }
   .contactus-title,
   .contactus-caption {
     font-size: 1.07rem;
@@ -281,17 +283,15 @@ body, html {
   .contactus-form {
     padding: 0 2vw;
   }
-  .contactus-content p {
-text-align: center;
-  max-width: 100%;
-}
-  .contactus-content h1 {
-  text-align: center;
-  max-width: 100%;
+   .contactus-hero {
+    min-height: 90vh;
   }
   .contactus-grid {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+  .contactus-content{
+    margin-top: 150px;
   }
   .contactus-btn {
     width: 80%;
@@ -307,6 +307,7 @@ text-align: center;
     font-weight: 800;
     margin-top: 100px;
     margin-bottom: 32px;
+    text-align: left;
   }
 }
 
@@ -327,6 +328,9 @@ text-align: center;
     border-radius: 9px;
     width: 80%;
   }
+  .contactus-content{
+    margin-top: 100px;
+  }
 }
 
 /* Large screens (2K and up, min-width: 1441px) */
@@ -334,6 +338,7 @@ text-align: center;
   .contactus-content {
     max-width: 1400px;
     margin: 0 auto;
+
   }
   .contactus-btn {
     width: 80%;
