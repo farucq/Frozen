@@ -6,6 +6,12 @@ html, body {
   margin: 0;
   padding: 0;
   color: #fff;
+  font-size: 17px; /* slightly larger base font */
+}
+
+.container {
+  max-width: 90% !important;
+  padding: 0 !important;
 }
 
 /* ===============================
@@ -15,16 +21,14 @@ html, body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #f2cce4;
   color: #3a2f2f;
-  overflow-x: hidden !important;
   width: 100%;
-   min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 /* ===============================
-   BLOG HERO SECTION
+   HERO SECTION
    =============================== */
 .blog-hero {
   position: relative;
@@ -33,56 +37,53 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
   z-index: 10;
+  display: flex;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
 }
 
 .blog-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(101, 18, 67, 0.4);
+  background: rgba(101, 18, 67, 0.45);
   z-index: 1;
-  pointer-events: none;
 }
 
 .blog-hero .Header {
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  top: 0;
   width: 100%;
+  z-index: 5;
 }
 
+/* HERO CONTENT CENTERED */
 .blog-content {
   position: relative;
   z-index: 2;
   color: #fff;
-  max-width: 900px;
-  margin: 60px auto 0;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: clamp(3rem, 8vh, 12rem) clamp(1rem, 5vw, 6rem);
 }
 
 .blog-content h1 {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
+  font-size: clamp(2.4rem, 4vw, 7rem); /* slightly larger */
   font-weight: 400;
-  margin-bottom: 32px;
-  text-align: left;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
 .blog-content p {
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: clamp(1.25rem, 2vw + 0.25rem, 2.188rem);
-  line-height: 1.4;
-  margin-bottom: 0;
-  text-align: left;
-  font-weight: 300;
+  font-size: clamp(1.1rem, 2vw, 2.4rem); /* increased slightly */
+  line-height: 1.6;
+  max-width: 65%;
   color: #fff;
-  max-width: 60%;
-  
+  font-weight: 300;
 }
 
 /* ===============================
@@ -90,39 +91,37 @@ html, body {
    =============================== */
 .content-section {
   background-color: #dcadc9;
-  padding: 5rem 0;
-  flex: 1; /* ensures footer stays at bottom naturally */
-  padding-bottom: 6rem; /* add enough space for footer transition */
+  padding: clamp(4rem, 8vh, 9rem) 0;
+  flex: 1;
 }
 
 .section-title {
-  font-size: 2.3rem;
   font-family: "Pacifico", cursive;
   color: #6a1b4d;
-  margin-bottom: 20px;
+  font-size: clamp(2rem, 2.8vw, 4.5rem);
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
 }
 
 p {
-  font-size: 1.5rem;
-  line-height: 1.9;
+  font-size: clamp(1.1rem, 1.5vw, 2rem);
+  line-height: 1.8;
   color: #3a2f2f;
 }
 
 .contentLeft {
-  padding-left: 4rem !important;
+  padding-left: clamp(1rem, 4vw, 8rem) !important;
 }
 
 .contentRight {
-  padding-right: 4rem !important;
+  padding-right: clamp(1rem, 4vw, 8rem) !important;
 }
 
 .content-img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   border-radius: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
@@ -130,57 +129,50 @@ p {
   transform: scale(1.03);
 }
 
+.SectionRow {
+  margin-bottom: 6rem;
+}
+
 /* ===============================
    RESPONSIVE DESIGN
    =============================== */
 @media (max-width: 992px) {
+  .blog-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .blog-content p {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    max-width: 90%;
+  }
+
   .section-title {
-    font-size: 1.75rem;
-  }
-
-  .contentLeft,
-  .contentRight {
-    padding: 0 2rem !important;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
   }
 }
 
 @media (max-width: 768px) {
   .blog-content {
-    max-width: 95%;
-    margin: 40px auto 0;
-    padding-top: 60px;
-    padding-left: 20px;
-    text-align: center;
-  }
-
-  .blog-content h1,
-  .blog-content p {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .blog-content h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .blog-content p {
-    font-size: 1.1rem;
-  }
-
-  .content-section {
     text-align: center;
     padding: 3rem 1.5rem;
   }
 
+  .blog-content h1 {
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+  }
+
+  .blog-content p {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    max-width: 100%;
+  }
+
+  .content-section {
+    padding: 3rem 1rem;
+  }
+
   .contentLeft,
   .contentRight {
-    padding: 0 1rem !important;
+    padding: 0 !important;
   }
 
   img.content-img {
@@ -188,18 +180,73 @@ p {
   }
 }
 
-@media (min-width: 1441px) {
-  .blog-content {
-    max-width: 1200px;
-    padding-left: 64px;
+/* ===============================
+   LARGE SCREENS (2K - 4K)
+   =============================== */
+@media (min-width: 1800px) {
+  html {
+    font-size: 18px;
   }
 
   .blog-content h1 {
-    font-size: 4rem;
+    font-size: clamp(5rem, 5vw, 8rem);
   }
 
   .blog-content p {
-    font-size: 2.2rem;   
+    font-size: clamp(1.6rem, 2vw, 2.8rem);
+  }
+
+  .section-title {
+    font-size: clamp(2.5rem, 2.5vw, 4rem);
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+
+  .blog-content h1 {
+    font-size: clamp(6rem, 5vw, 10rem);
+  }
+
+  .blog-content p {
+    font-size: clamp(2rem, 2.5vw, 3.8rem);
+  }
+
+  .section-title {
+    font-size: clamp(3rem, 2.8vw, 5rem);
+  }
+
+  .content-img {
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 22px;
+  }
+
+  .blog-content h1 {
+    font-size: clamp(6rem, 5.5vw, 11rem);
+  }
+
+  .blog-content p {
+    font-size: clamp(3rem, 3vw, 5rem);
+  }
+
+  .section-title {
+    font-size: clamp(3.5rem, 3vw, 5.5rem);
+  }
+
+  .contentLeft {
+    padding-left: 10rem !important;
+  }
+
+  .contentRight {
+    padding-right: 10rem !important;
   }
 }
 
