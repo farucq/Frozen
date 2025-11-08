@@ -98,9 +98,9 @@ function ContactUs() {
     <>
       <div className="contactus-hero">
         <Header background="#DCADC9" />
-        <div className="contactus-content  text-md-start container py-5">
+        <div className="contactus-content container py-5 ">
           <motion.h1
-            className="display-5 mb-3 "
+            className="display-6 mb-3 "
             variants={heroTextVariants}
             initial="hidden"
             animate="visible"
@@ -108,7 +108,7 @@ function ContactUs() {
             "We're Here To Hear From You"
           </motion.h1>
           <motion.p
-            className="fs-3"
+            className="fs-3 "
             variants={heroTextVariants}
             initial="hidden"
             animate="visible"
@@ -120,14 +120,14 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="contactform-hero py-5">
-        <div className="container d-flex justify-content-center">
+      <div className="contactform-hero py-5" style={{ width: "100%" }}>
+        <div className="container-fluid d-flex justify-content-center">
           <form 
             ref={formRef}
             className="contactus-form shadow-lg p-4 rounded bg-transparent w-100"
           >
             <motion.div 
-              className="row mb-4 align-items-center"
+              className="row mb-4 "
               variants={formHeaderVariants}
               initial="hidden"
               whileInView="visible"
@@ -137,7 +137,7 @@ function ContactUs() {
                 <h1 className="contactus-title display-6 fw-bold">"Your Scoop Starts Here"</h1>
               </div>
               <div className="col-12 col-md-6">
-                <p className="contactus-caption fs-5 text-md-end text-center">
+                <p className="contactus-caption fs-5">
                   "Fill out the form and our team will get back to you faster than your ice cream can melt!"
                 </p>
               </div>
@@ -170,7 +170,6 @@ function ContactUs() {
                   className="form-control"
                   placeholder="Type your message"
                   rows={isMobile ? "2" : "5"}
-                  style={{ resize: "none" }}
                 ></textarea>
               </div>
             </div>
@@ -184,9 +183,8 @@ function ContactUs() {
             >
               <motion.button
                 type="submit"
-                className="btn py-3 text-white"
-                style={{ backgroundColor: "#651243", borderRadius: "10px", fontWeight: "600", fontSize: "1.1rem", width: "80%" }}
-                whileHover={{ scale: 1.05, backgroundColor: "#501033" }}
+                className="btn contactus-submit-btn py-3 text-white"
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
@@ -197,14 +195,14 @@ function ContactUs() {
         </div>
       </div>
 
-     <Footer
-  backgroundImage={"/assets/images/contactus/footeraboutus.png"}
-  hoveredButton={hoveredButton}
-  setHoveredButton={setHoveredButton}
-  buttonColor="#6e1b4d"
-  hoverButtonColor="#651243"
-  overlay={true} // Add this
-/>
+      <Footer
+        backgroundImage={"/assets/images/contactus/footeraboutus.png"}
+        hoveredButton={hoveredButton}
+        setHoveredButton={setHoveredButton}
+        buttonColor="#6e1b4d"
+        hoverButtonColor="#651243"
+        overlay={true}
+      />
     </>
   );
 }
