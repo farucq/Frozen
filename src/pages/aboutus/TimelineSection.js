@@ -73,7 +73,7 @@ function Timeline() {
           {timelineData.map((item, index) => (
             <motion.div
               key={item.id}
-              className={`timeline-item ${item.position}`}
+              className={timeline-item ${item.position}}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.3 }}
