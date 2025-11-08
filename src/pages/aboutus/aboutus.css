@@ -23,6 +23,8 @@ body {
   margin: 0;
   padding: 0;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutus-hero::before {
@@ -44,30 +46,34 @@ body {
   position: relative;
   z-index: 2;
   color: #fff;
-  max-width: 900px;
-  margin: 60px auto 0;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 20px;
+  max-width: 900px !important;
+  margin: auto;
+  padding: 20px 50px 20px 50px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
-.aboutus-content h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
-  font-weight: 400;
-  margin-bottom: 32px;
-  text-align: left;
+.aboutus-content h1,
+.aboutus-content .display-5 {
+  font-family: 'Pacifico', cursive !important;
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem) !important;
+  font-weight: 400 !important;
+  margin-bottom: 32px !important;
+  text-align: left !important;
 }
 
-.aboutus-content p {
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: clamp(1.25rem, 2vw + 0.25rem, 2.188rem);
-  line-height: 1.4;
-  margin-bottom: 0;
-  text-align: left;
-  font-weight: 300;
-  color: #fff;
-    max-width: 60%;
+.aboutus-content p,
+.aboutus-content .fs-2 {
+  font-family: 'Josefin Sans', Arial, sans-serif !important;
+  font-size: clamp(1.5rem, 3vw + 0.5rem, 3rem) !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+  font-weight: 100 !important;
+  color: #fff !important;
+  max-width: 60%;
 }
 
 /* ===============================
@@ -242,6 +248,7 @@ section {
   position: relative;
   z-index: 2;
 }
+
 .aboutus-value-card:hover {
   box-shadow: 0 6px 22px rgba(101,18,67,0.14);
 }
@@ -254,15 +261,19 @@ section {
   background-position: center;
   background-size: 70%;
 }
+
 .aboutus-value-icon.basket {
   background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T151725.255.png');
 }
+
 .aboutus-value-icon.icecream {
   background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T151731.757.png');
 }
+
 .aboutus-value-icon.balance {
   background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T153421.860 1.png');
 }
+
 .aboutus-value-icon.community {
   background-image: url('/public/assets/images/aboutus/icons/image - 2025-09-04T153721.649 1.png');
 }
@@ -288,131 +299,442 @@ section {
    RESPONSIVE BREAKPOINTS
 =============================== */
 
-/* Extra small devices (mobiles) */
+/* Extra small devices (mobiles) - up to 600px */
 @media (max-width: 600px) {
-  .aboutus-values-section {
-    padding: 20px 0 24px 0;
-  }
-  .aboutus-hero{
+  .aboutus-hero {
     min-height: 85vh;
   }
   
-  .aboutus-values-title {
-    font-size: 1.4rem;
-    margin-bottom: 16px;
+  .aboutus-content {
+    padding-top: 60px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+    padding-bottom: 40px !important;
   }
+  
+  .aboutus-content h1,
+  .aboutus-content .display-5 {
+    text-align: left !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .aboutus-content p,
+  .aboutus-content .fs-2 {
+    text-align: left !important;
+    max-width: 100% !important;
+    font-size: 1.5rem !important;
+  }
+  
+  .frozen-world-section,
+  .aboutus-cta-section {
+    min-height: 40vh;
+    padding: 60px 20px;
+  }
+  
+  .frozen-world-title {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+  
+  .frozen-world-description {
+    font-size: 1rem;
+  }
+  
+  .aboutus-cta-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  
+  .aboutus-cta-button {
+    font-size: 0.95rem;
+    padding: 12px 35px;
+  }
+  
+  .aboutus-values-section {
+    padding: 32px 20px 40px 20px;
+  }
+  
+  .aboutus-values-title {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+  
   .aboutus-values-cards {
     grid-template-columns: 1fr;
-    gap: 28px 0;
-    max-width: 80%;
+    gap: 24px;
+    max-width: 90%;
   }
+  
   .aboutus-value-card {
-    min-height: 150px;
-    padding: 28px 16px 20px 16px;
+    min-height: 180px;
+    padding: 28px 20px;
   }
+  
+  .aboutus-value-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 14px;
+  }
+  
   .aboutus-value-heading {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 12px;
   }
-  .aboutus-value-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-    background-size: 80%;
-  }
-  .aboutus-content p {
-    text-align: center;
-    max-width: 100%;
-  }
-  .aboutus-content h1 {
-    text-align: center;
-  }
   
+  .aboutus-value-card p {
+    font-size: 0.95rem;
+  }
 }
 
-/* Tablets and small desktops */
+/* Tablets and small desktops - 601px to 1200px */
 @media (min-width: 601px) and (max-width: 1200px) {
+  .aboutus-hero {
+    min-height: 90vh;
+  }
+  
+   .aboutus-content {
+    max-width: 1400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
+  }
+  
+  .aboutus-content h1,
+  .aboutus-content p {
+    text-align: left;
+  }
+  
+  .frozen-world-section,
+  .aboutus-cta-section {
+    padding: 80px 40px;
+    min-height: 45vh;
+  }
+  
+  .frozen-world-content,
+  .aboutus-cta-content {
+    max-width: 1000px;
+  }
+  
+  .frozen-world-title {
+    font-size: 3rem;
+  }
+  
+  .frozen-world-description {
+    font-size: 1.3rem;
+  }
+  
+  .aboutus-cta-title {
+    font-size: 2.5rem;
+  }
+  
+  .aboutus-values-section {
+    padding: 60px 40px 70px 40px;
+  }
+  
+  .aboutus-values-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+  
   .aboutus-values-cards {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 960px;
-    gap: 30px 40px;
+    max-width: 900px;
+    gap: 32px 40px;
   }
-   .aboutus-hero{
-    min-height: 85vh;
+  
+  .aboutus-value-card {
+    min-height: 220px;
+    padding: 34px 28px;
+  }
+  
+  .aboutus-value-icon {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .aboutus-value-heading {
+    font-size: 1.4rem;
+  }
+  
+  .aboutus-value-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Standard desktops - 1201px to 1919px (Full HD) */
+@media (min-width: 1201px) and (max-width: 1919px) {
+  .aboutus-content {
+    max-width: 1300px !important;
+    padding: 40px 80px !important;
+  }
+  
+  .aboutus-content h1,
+  .aboutus-content .display-5 {
+    font-size: 4.5rem !important;
+    text-align: left !important;
+    margin-bottom: 36px !important;
+  }
+  
+  .aboutus-content p,
+  .aboutus-content .fs-2 {
+    font-size: 2.5rem !important;
+    text-align: left !important;
+    max-width: 85% !important;
+  }
+  
+  .frozen-world-section,
+  .aboutus-cta-section {
+    padding: 100px 60px;
+  }
+  
+  .frozen-world-content,
+  .aboutus-cta-content {
+    max-width: 1200px;
+  }
+  
+  .frozen-world-title {
+    font-size: 3.5rem;
+  }
+  
+  .frozen-world-description {
+    font-size: 1.4rem;
+  }
+  
+  .aboutus-cta-title {
+    font-size: 2.8rem;
+  }
+  
+  .aboutus-values-section {
+    padding: 70px 60px 80px 60px;
   }
   
   .aboutus-values-title {
-    font-size: clamp(2.0rem, 1.5vw + 0.5rem, 2.8rem);
-  }
-  .aboutus-value-card {
-    min-height: 220px;
-    padding: 34px 28px 26px 28px;
-  }
-  .aboutus-values-section {
-                    padding: 60px 50px 70px 50px;
-  }
-    .aboutus-content p {
-    max-width: 95%;
-  }
-}
-
-/* Large desktops, 2K screens */
-@media (min-width: 1201px) and (max-width: 2559px) {
-  .aboutus-values-section {
-            padding: 60px 50px 70px 50px;
-  }
-  .aboutus-values-title {
-    font-size: clamp(2.6rem, 2vw + 1rem, 4rem);
+    font-size: 2.8rem;
     margin-bottom: 60px;
   }
+  
   .aboutus-values-cards {
-    max-width: 1400px;
-    gap: 40px 60px;
+    max-width: 1200px;
+    gap: 40px 50px;
   }
+  
   .aboutus-value-card {
-    min-height: 280px;
-    padding: 40px 36px 32px 36px;
+    min-height: 260px;
+    padding: 40px 34px;
   }
-  .aboutus-value-heading {
-    font-size: clamp(1.8rem, 1vw + 0.75rem, 2.2rem);
-  }
+  
   .aboutus-value-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 22px;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 20px;
   }
+  
+  .aboutus-value-heading {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
   .aboutus-value-card p {
-    font-size: clamp(1.2rem, 1vw + 0.4rem, 1.4rem);
+    font-size: 1.1rem;
   }
 }
 
-/* Ultra HD and 4K displays */
-@media (min-width: 2560px) {
-  .aboutus-values-section {
-    padding: 80px 0 100px 0;
+/* 2K displays - 1920px to 2559px (2560×1440) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .aboutus-hero {
+    min-height: 100vh;
   }
-  .aboutus-values-title {
+  
+  .aboutus-content {
+    max-width: 1700px !important;
+    padding: 50px 100px !important;
+  }
+  
+  .aboutus-content h1,
+  .aboutus-content .display-5 {
+    font-size: 5.5rem !important;
+    margin-bottom: 45px !important;
+    text-align: left !important;
+  }
+  
+  .aboutus-content p,
+  .aboutus-content .fs-2 {
+    font-size: 3rem !important;
+    line-height: 1.5 !important;
+    max-width: 80% !important;
+    text-align: left !important;
+  }
+  
+  .frozen-world-section,
+  .aboutus-cta-section {
+    min-height: 75vh;
+    padding: 120px 80px;
+  }
+  
+  .frozen-world-content,
+  .aboutus-cta-content {
+    max-width: 1600px;
+  }
+  
+  .frozen-world-title {
     font-size: 4.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .frozen-world-description {
+    font-size: 1.8rem;
+    line-height: 1.9;
+    max-width: 1400px;
+  }
+  
+  .aboutus-cta-title {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    max-width: 1200px;
+  }
+  
+  .aboutus-cta-button {
+    font-size: 1.3rem;
+    padding: 18px 60px;
+  }
+  
+  .aboutus-values-section {
+    padding: 90px 80px 100px 80px;
+  }
+  
+  .aboutus-values-title {
+    font-size: 3.5rem;
     margin-bottom: 70px;
   }
+  
   .aboutus-values-cards {
-    max-width: 1800px;
-    gap: 60px 80px;
+    max-width: 1600px;
+    gap: 50px 70px;
   }
+  
   .aboutus-value-card {
-    min-height: 340px;
-    padding: 52px 48px 44px 48px;
+    min-height: 320px;
+    padding: 50px 42px 40px 42px;
+    border-radius: 22px;
   }
-  .aboutus-value-heading {
-    font-size: 2.5rem;
-    margin-bottom: 26px;
-  }
+  
   .aboutus-value-icon {
-    width: 72px;
-    height: 72px;
-    margin-bottom: 28px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 24px;
   }
+  
+  .aboutus-value-heading {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  
   .aboutus-value-card p {
+    font-size: 1.35rem;
+    line-height: 1.7;
+  }
+}
+
+/* 4K displays - 2560px and above (3840×2160) */
+@media (min-width: 2560px) {
+  .aboutus-hero {
+    min-height: 70vh;
+  }
+  
+  .aboutus-content {
+    max-width: 2400px !important;
+    padding: 60px 140px !important;
+  }
+  
+  .aboutus-content h1,
+  .aboutus-content .display-5 {
+    font-size: 5rem !important;
+    margin-bottom: 55px !important;
+    text-align: left !important;
+  }
+  
+  .aboutus-content p,
+  .aboutus-content .fs-2 {
+    font-size: 4rem !important;
+    line-height: 1.6 !important;
+    max-width: 75% !important;
+    text-align: left !important;
+  }
+  
+  .frozen-world-section,
+  .aboutus-cta-section {
+    min-height: 60vh;
+    padding: 150px 120px;
+  }
+  
+  .frozen-world-content,
+  .aboutus-cta-content {
+    max-width: 2200px;
+  }
+  
+  .frozen-world-title {
+    font-size: 6rem;
+    margin-bottom: 50px;
+  }
+  
+  .frozen-world-description {
+    font-size: 2.4rem;
+    line-height: 2;
+    max-width: 2000px;
+  }
+  
+  .aboutus-cta-title {
+    font-size: 4.8rem;
+    margin-bottom: 60px;
+    max-width: 1600px;
+  }
+  
+  .aboutus-cta-button {
     font-size: 1.6rem;
+    padding: 22px 80px;
+    border-radius: 60px;
+  }
+  
+  .aboutus-values-section {
+    padding: 120px 120px 140px 120px;
+  }
+  
+  .aboutus-values-title {
+    font-size: 5rem;
+    margin-bottom: 90px;
+  }
+  
+  .aboutus-values-cards {
+    max-width: 2200px;
+    gap: 70px 100px;
+  }
+  
+  .aboutus-value-card {
+    min-height: 420px;
+    padding: 65px 55px 50px 55px;
+    border-radius: 28px;
+    border: 3px solid #892c73;
+  }
+  
+  .aboutus-value-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 32px;
+  }
+  
+  .aboutus-value-heading {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .aboutus-value-card p {
+    font-size: 1.8rem;
+    line-height: 1.8;
   }
 }
