@@ -34,9 +34,9 @@ function AboutUs() {
       {/* Hero Section */}
       <div className="aboutus-hero">
         <Header background="#DCADC9" />
-        <div className="aboutus-content container py-5 text-center">
+        <div className="aboutus-content container py-5 ">
           <motion.h1
-            className="display-5 mb-3"
+            className="display-6 mb-3"
             initial="hidden"
             animate="visible"
             variants={textVariants}
