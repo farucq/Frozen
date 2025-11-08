@@ -500,17 +500,20 @@ body, html {
     min-height: 70vh;
   }
 
-  .contactus-content {
-    max-width: 2400px !important;
-    padding: 60px 140px !important;
+ .contactus-content {
+    max-width: 1400px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
   }
-  
+
   .contactus-content h1,
-  .contactus-content .display-5 {
-    font-size: 5rem !important;
-    margin-top: 205px !important;
-    text-align: left !important;
+  .contactus-content p {
+    text-align: left;
   }
+
   .contactform-hero{
     min-height: 50vh;
   }
