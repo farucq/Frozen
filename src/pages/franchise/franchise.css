@@ -241,8 +241,20 @@
 
 /* Laptop/Desktop (1025px to 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .franchise-content {
-    max-width: 850px;
+.franchise-content {
+    max-width: 1400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
+  }
+  
+  .franchise-content h1,
+  .franchise-content p {
+    text-align: left;
   }
 
   .franchiseform-hero {
@@ -258,16 +270,20 @@
 
 /* Large Desktop / 2K (1441px to 2559px) */
 @media (min-width: 1441px) and (max-width: 2559px) {
-  .franchise-content {
-    max-width: 1200px;
+ .franchise-content {
+    max-width: 1400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
   }
-
-  .franchise-content h1 {
-    font-size: 4rem;
-  }
-
+  
+  .franchise-content h1,
   .franchise-content p {
-    font-size: 2.2rem;
+    text-align: left;
   }
 
   .franchiseform-hero {
