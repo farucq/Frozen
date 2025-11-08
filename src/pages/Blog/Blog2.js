@@ -51,7 +51,7 @@ useEffect(() => {
       <Header background="#DCADC9" />
 
       {/* Hero Content */}
-      <div className="blog-content container py-5 text-center">
+      <div className="blog-content container py-5 text-center text-md-start">
         <motion.h1
           className="display-5 mb-3"
           initial="hidden"
@@ -62,7 +62,7 @@ useEffect(() => {
         </motion.h1>
 
         <motion.p
-          className="fs-2"
+          className=""
           initial="hidden"
           animate="visible"
           variants={textVariants}
