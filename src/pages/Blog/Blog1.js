@@ -2,80 +2,79 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Blog1.css";
-import Header from "../../layout/header/header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+import Header from "../../layout/header/header";
 import Footer from "../../layout/footer/footer";
 
 function Blog1() {
-useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 600, // smooth speed
+      duration: 600, // smooth animation speed
       once: true,    // animate only once
       easing: "ease-in-out",
-      offset: 100,   // small trigger offset
+      offset: 100,   // small scroll trigger offset
     });
   }, []);
-  
-useEffect(() => {
-    // Step 1: Disable smooth scrolling temporarily
+
+  useEffect(() => {
+    // Disable smooth scroll temporarily
     const html = document.documentElement;
     const prevBehavior = html.style.scrollBehavior;
     html.style.scrollBehavior = "auto";
 
-    // Step 2: Jump instantly to top after mount (slight delay ensures Framer Motion mounts)
+    // Jump instantly to top after mount
     const timeout = setTimeout(() => {
       window.scrollTo(0, 0);
-      // Step 3: Restore smooth scroll (for user-initiated scrolls later)
       html.style.scrollBehavior = prevBehavior || "smooth";
-    }, 60); // 55ms ensures animations still trigger properly
+    }, 55);
 
     return () => clearTimeout(timeout);
   }, []);
-
-
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
     <div className="blog1">
       {/* Hero Section */}
-      <div className="blog-hero"  style={{
-    backgroundImage: `url('/assets/images/Blog/Banner1.png')`
-  }}>
-      {/* Header Section */}
-      <Header background="#DCADC9" />
+      <div
+        className="blog-hero"
+        style={{
+          backgroundImage: `url('/assets/images/Blog/Banner1.png')`,
+        }}
+      >
+        {/* Header */}
+        <Header background="#DCADC9" />
 
-      {/* Hero Content */}
-      <div className="blog-content container py-5 text-center">
-        <motion.h1
-          className="display-5 mb-3"
-          initial="hidden"
-          animate="visible"
-          variants={textVariants}
-        >
-          Freshness in Every Bowl
-        </motion.h1>
+        {/* Hero Content */}
+        <div className="blog-content container py-5 text-center text-md-start">
+          <motion.h1
+            className="display-5 mb-3"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
+            Freshness in Every Bowl
+          </motion.h1>
 
-        <motion.p
-          className="fs-2"
-          initial="hidden"
-          animate="visible"
-          variants={textVariants}
-          transition={{ delay: 0.2, duration: 0.6 }}
-        >
-          Play the Fruit challenge game, grab scratch cards, and win indulgent
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            Play the Fruit Challenge game, grab scratch cards, and win indulgent
             treats & offers.
-        </motion.p>
+          </motion.p>
+        </div>
       </div>
-    </div>
 
       {/* Content Section */}
       <section className="content-section">
@@ -87,9 +86,7 @@ useEffect(() => {
               className="contentRight col-lg-7 col-md-12 text-start mb-4 mb-lg-0"
               data-aos="fade-left"
             >
-              <h3 className="section-title">
-                Where Every Leaf Tells a Story
-              </h3>
+              <h3 className="section-title">Where Every Leaf Tells a Story</h3>
               <p>
                 At Frozen Creamery N’ Garden, every salad is a story of nature’s
                 simplicity. We partner with local farmers to source the freshest
@@ -98,8 +95,15 @@ useEffect(() => {
                 it’s our promise.
               </p>
             </div>
-            <div className="col-lg-5 col-md-12 text-center" data-aos="fade-up">
-              <img src="/assets/images/Blog/img1.png" className="content-img" alt="salad prep" />
+            <div
+              className="col-lg-5 col-md-12 text-center"
+              data-aos="fade-up"
+            >
+              <img
+                src="/assets/images/Blog/img1.png"
+                className="img-fluid rounded-4 shadow content-img"
+                alt="salad prep"
+              />
             </div>
           </div>
 
@@ -119,8 +123,15 @@ useEffect(() => {
                 nourishes your body but also brings peace to your mind.
               </p>
             </div>
-            <div className="col-lg-5 col-md-12 text-center" data-aos="fade-up">
-              <img src="/assets/images/Blog/img3.png" className="content-img" alt="fresh ingredients" />
+            <div
+              className="col-lg-5 col-md-12 text-center"
+              data-aos="fade-up"
+            >
+              <img
+                src="/assets/images/Blog/img3.png"
+                className="img-fluid rounded-4 shadow content-img"
+                alt="fresh ingredients"
+              />
             </div>
           </div>
 
@@ -130,39 +141,47 @@ useEffect(() => {
               className="contentRight col-lg-7 col-md-12 text-start mb-4 mb-lg-0"
               data-aos="fade-left"
             >
-              <h3 className="section-title">
-                <span
+              <h3 className="section-title d-flex">
+                {/* <span
                   style={{
                     fontFamily: "'Dancing Script', cursive",
-                    fontSize: "2.5rem",
+                    fontSize: "clamp(2rem, 3vw, 10rem)",
                     marginRight: "6px",
                     fontWeight: "900",
-
                   }}
                 >
                   A
-                </span>
-                Bowl Full of Positivity
+                </span> */}
+                A Bowl Full of Positivity
               </h3>
               <p>
-                Our salads aren’t just meals — they’re moments of care.
-                Perfect for every mood and moment, they balance taste and
-                wellness effortlessly. We serve not just food, but mindful
-                experiences where freshness meets emotion in every bite.
+                Our salads aren’t just meals — they’re moments of care. Perfect
+                for every mood and moment, they balance taste and wellness
+                effortlessly. We serve not just food, but mindful experiences
+                where freshness meets emotion in every bite.
               </p>
             </div>
-            <div className="col-lg-5 col-md-12 text-center" data-aos="fade-up">
-              <img src="/assets/images/Blog/img2.png" className="content-img" alt="salad bowl" />
+            <div
+              className="col-lg-5 col-md-12 text-center"
+              data-aos="fade-up"
+            >
+              <img
+                src="/assets/images/Blog/img2.png"
+                className="img-fluid rounded-4 shadow content-img"
+                alt="salad bowl"
+              />
             </div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
       <Footer
-              backgroundImage={"/assets/images/contactus/footeraboutus.png"}
-              buttonColor="#6e1b4d"
-              hoverButtonColor="#651243"
-              overlay={true}
-            />
+        backgroundImage={"/assets/images/contactus/footeraboutus.png"}
+        buttonColor="#6e1b4d"
+        hoverButtonColor="#651243"
+        overlay={true}
+      />
     </div>
   );
 }
