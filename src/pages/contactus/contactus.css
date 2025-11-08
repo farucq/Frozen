@@ -1,10 +1,21 @@
-/* General hero background */
+/* ===================================
+   BASE STYLES & RESET
+   =================================== */
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
 .contactus-hero {
   background-image: url("/public/assets/images/contactus/aboutus1.png.png");
   min-height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -13,10 +24,6 @@
   padding: 0;
   position: relative;
   margin: 0;
-  overflow-x: hidden;
-}
-
-body, html {
   overflow-x: hidden;
 }
 
@@ -34,49 +41,50 @@ body, html {
   width: 100%;
 }
 
-/* Hero content */
+/* Hero Content */
 .contactus-content {
   position: relative;
   z-index: 1;
   color: #fff;
-  max-width: 900px;
-  margin: 60px auto 0;
-  padding-top: 90px;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(80px, 12vh, 140px) clamp(20px, 5vw, 60px) clamp(40px, 8vh, 80px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contactus-content h1 {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
   font-weight: 800;
-  margin-top: 100px;
-  margin-bottom: 32px;
+  margin: 0 0 clamp(20px, 3vh, 32px);
   text-align: left;
+  line-height: 1.2;
 }
 
 .contactus-content p {
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: clamp(1.25rem, 2vw + 0.25rem, 2rem);
-  line-height: 1.4;
-  margin-bottom: 0;
- color:#fff;
+   font-size: clamp(1.5rem, 3vw + 0.5rem, 3rem) !important;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
   text-align: left;
   font-weight: 300;
-  max-width: 60%;
+  max-width: 100%;
 }
 
-/* Contact form section */
+/* ===================================
+   CONTACT FORM SECTION
+   =================================== */
 .contactform-hero {
   min-height: 100vh;
   background: url('/public/assets/images/contactus/unsplash_-uRc7LXsfSk_imgupscaler.ai_General_16K\ 1\ \(1\).png') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: clamp(40px, 8vh, 80px) clamp(15px, 3vw, 40px);
   position: relative;
   overflow-x: hidden;
-   overflow: visible !important;
 }
 
 .contactform-hero::after {
@@ -91,66 +99,68 @@ body, html {
 .contactus-form {
   z-index: 2;
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 1080px;
   background: transparent;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 32px;
-  overflow: hidden;
+  gap: clamp(20px, 4vh, 32px);
+  padding: 0 clamp(15px, 3vw, 40px);
+  box-sizing: border-box;
 }
 
-/* Form headings */
+/* Form Headings */
 .contactus-headings {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 18px;
-  gap: 32px;
+  align-items: flex-end;
+  margin-bottom: clamp(12px, 2vh, 18px);
+  gap: clamp(16px, 3vh, 32px);
 }
 
 .contactus-title {
   color: #fff;
   font-family: 'Pacifico', 'Dancing Script', cursive;
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
-  margin: 0 0 8px;
-  flex: 1 1 300px;
+  margin: 0;
+  flex: 1 1 250px;
+  line-height: 1.2;
 }
 
 .contactus-caption {
   color: #fff;
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  font-size: clamp(0.95rem, 2.5vw, 1.5rem);
   font-weight: 300;
   margin: 0;
   text-align: left;
-  flex: 2 1 350px;
-  align-self: flex-end;
-  line-height: 1;
+  flex: 2 1 300px;
+  line-height: 1.4;
 }
 
 /* Form Grid Layout */
 .contactus-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 24px 32px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(16px, 3vh, 24px) clamp(20px, 4vw, 32px);
 }
 
 /* Input Groups */
 .contactus-input-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: clamp(6px, 1vh, 8px);
 }
 
 .contactus-input-group label {
   color: rgba(255, 255, 255, 0.65);
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 300;
 }
 
 /* Unified Input and Textarea styling */
@@ -158,16 +168,18 @@ body, html {
 .contactus-input-group textarea,
 .contactus-form .form-control {
   width: 100%;
-  padding: 14px;
+  padding: clamp(12px, 2vh, 14px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(255, 255, 255, 0.65) !important;
   color: #3e293a !important;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
   font-family: 'Josefin Sans', Arial, sans-serif;
   box-shadow: none;
   outline: none;
   transition: background 0.3s ease, border 0.3s ease;
+  box-sizing: border-box;
+  resize: none;
 }
 
 /* Focus effect */
@@ -190,37 +202,41 @@ body, html {
 
 /* Textarea Specifics */
 .contactus-input-group textarea {
-  height: 180px;
+  height: clamp(140px, 20vh, 180px);
   min-height: 120px;
   max-height: 300px;
   resize: vertical;
 }
 
 /* Button Styling */
-.contactus-btn {
-  margin: 32px auto 0 auto;
+.contactus-btn,
+.contactus-submit-btn {
+  margin: clamp(10px, 4vh, 32px) auto 0;
   display: block;
-  width: 80%;
-  background: #651243;
-  color: #fff;
+  width: min(80%, 600px);
+  background: #651243 !important;
+  color: #fff !important;
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 600;
   border: none;
-  border-radius: 16px;
-  padding: 18px 12px;
+  border-radius: clamp(12px, 2vw, 16px);
+  padding: clamp(14px, 2.5vh, 18px) clamp(10px, 2vw, 12px);
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.1s;
   letter-spacing: 0.02em;
   box-shadow: 0 2px 14px 0 rgba(101, 18, 67, 0.12);
 }
 
 .contactus-btn:hover,
-.contactus-btn:active {
-  background: #501033;
+.contactus-btn:active,
+.contactus-submit-btn:hover,
+.contactus-submit-btn:active {
+  background: #501033 !important;
+  transform: translateY(-1px);
 }
 
-
+/* Footer Wrapper */
 .contactus-footer-wrapper {
   position: relative;
 }
@@ -239,149 +255,416 @@ body, html {
   z-index: 2;
 }
 
-/* Small screens (max-width: 540px) */
-@media (max-width: 540px) {
-  .contactus-form {
-    padding: 0 4vw;
-    gap: 20px;
-  }
-  .contactus-hero{
+/* ===================================
+   RESPONSIVE BREAKPOINTS
+   =================================== */
+/* =======================================================
+   SMALL MOBILE DEVICES (max-width: 480px)
+   ======================================================= */
+@media (max-width: 480px) {
+  .contactus-hero {
     min-height: 85vh;
+    background-position: center;
   }
-  .contactus-title,
-  .contactus-caption {
-    font-size: 1.07rem;
+
+   .contactus-content {
+    max-width: 1400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
+  }
+  
+  .contactus-content h1,
+  .contactus-content p {
     text-align: left;
   }
-  .contactus-btn {
-    font-size: 1rem;
-    padding: 1px 5px;
-    border-radius: 9px;
-    width: 80%;
-  }
 
-  .contactus-footer-wrapper {
-  position: relative;
-}
-
-.contactus-footer-wrapper::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(101, 18, 67, 0.15);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.contactus-footer-wrapper > * {
-  position: relative;
-  z-index: 2;
-}
-
-}
-/* Medium-small screens (max-width: 900px) */
-@media (max-width: 900px) {
   .contactus-form {
-    padding: 0 2vw;
-  }
-  .contactus-content p {
-text-align: center;
-  max-width: 100%;
-}
- .contactus-hero{
-    min-height: 85vh;
-  }
-  .contactus-content h1 {
-  text-align: center;
-  max-width: 100%;
-  }
-  .contactus-grid {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-  .contactus-btn {
-    width: 80%;
-    font-size: 1.1rem;
-  }
-  .contactus-headings {
-    flex-direction: column;
+    padding: 0 15px;
     gap: 16px;
   }
-  .contactus-content h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: clamp(2rem, 4vw + 1rem, 3.3rem);
-    font-weight: 800;
-    margin-top: 100px;
-    margin-bottom: 32px;
+
+  .contactus-headings {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
   }
-}
-/* Small screens (max-width: 540px) */
-@media (max-width: 540px) {
-  .contactus-form {
-    padding: 0 4vw;
-    gap: 20px;
-  }
+
   .contactus-title,
   .contactus-caption {
-    font-size: 1.07rem;
-    text-align: left;
+    text-align: center;
   }
-  .contactus-btn {
-    font-size: 1rem;
-    padding: 1px 5px;
-    border-radius: 9px;
-    width: 80%;
+
+  .contactus-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contactus-btn,
+  .contactus-submit-btn {
+    width: 90%;
+    font-size: 1.05rem;
+    padding: 14px 8px;
+  }
+
+  .contactus-footer-wrapper::before {
+    background: rgba(101, 18, 67, 0.15);
   }
 }
 
-/* Large screens (2K and up, min-width: 1441px) */
-@media (min-width: 1441px) {
+
+/* =======================================================
+   MOBILE LANDSCAPE & SMALL TABLETS (481px - 768px)
+   ======================================================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contactus-hero {
+    min-height: 90vh;
+  }
+
   .contactus-content {
     max-width: 1400px;
-    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical centering */
+    align-items: center;       /* horizontal centering */
+    text-align: center;        /* center text inside */
+    flex: 1;
+    min-height: 0;
   }
-  .contactus-btn {
-    width: 80%;
+
+  .contactus-content h1,
+  .contactus-content p {
+    text-align: center; /* ensure headings and text are centered */
+    margin: 10px 0;     /* add slight spacing for neat layout */
+  }
+
+  .contactusform-hero {
+    min-height: 90vh;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center; /* vertically center form area */
+    align-items: center;     /* horizontally center form area */
+    overflow-y: auto;
+  }
+
+  .contactus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
+
+
+/* =======================================================
+   TABLETS & iPADS (769px - 1024px)
+   ======================================================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contactus-hero {
+    min-height: 85vh;
+  }
+
+  .contactus-content {
+    max-width: 1400px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .contactus-content h1,
+  .contactus-content p {
+    text-align: left;
+  }
+
+  .contactus-form {
+    max-width: 85%;
+  }
+
+  .contactform-hero {
+    min-height: 90vh;
+    padding: 40px 15px;
+    overflow-y: auto;
+  }
+
+  .contactus-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+
+/* =======================================================
+   DESKTOP (1025px - 1440px)
+   ======================================================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .contactus-content {
+    max-width: 1400px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .contactus-content h1,
+  .contactus-content p {
+    text-align: left;
+  }
+
+  .contactus-form {
+    max-width: 1000px;
+  }
+
+  .contactus-content p {
+    max-width: 70%;
+  }
+}
+
+
+/* =======================================================
+   LARGE SCREENS / 2K (1441px - 2559px)
+   ======================================================= */
+@media (min-width: 1441px) and (max-width: 2559px) {
+  .contactus-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactus-content {
+    max-width: 1400px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .contactus-content h1,
+  .contactus-content p {
+    text-align: left;
+  }
+
+  .contactus-form {
+    max-width: 2000px;
+    width: 98%;
+
+  }
+  .contactform-hero{
+    min-height: 50vh;
+  }
+
+  .contactus-content p {
+    max-width: 65%;
+    font-size: 2.2rem;
+  }
+
+  .contactus-btn,
+  .contactus-submit-btn {
     font-size: 1.4rem;
     padding: 20px 14px;
   }
-  .contactus-form {
-    max-width: 1400px;
-    width: 100%;
+
+  .contactus-input-group label,
+  .form-label {
+    font-size: 24px;
+  }
+
+  .contactus-input-group input,
+  .contactus-input-group textarea,
+  .contactus-form .form-control {
+    font-size: 20px;
+    padding: 18px;
+    min-height: 56px;
+  }
+
+  .contactus-input-group textarea,
+  .contactus-form textarea.form-control {
+    height: 220px;
+    min-height: 180px;
   }
 }
 
-/* Ultra large screens (4K and up, min-width: 2560px) */
-@media (min-width: 2560px) {
+
+/* =======================================================
+   4K DISPLAYS (2560px - 3839px)
+   ======================================================= */
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .contactus-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+
   .contactus-content {
-    max-width: 2500px;
-    margin: 0 auto;
+    max-width: 2400px !important;
+    padding: 60px 140px !important;
   }
-  .contactus-btn {
-    width: 80%;
-    font-size: 1.6rem;
-    padding: 24px 18px;
+  
+  .contactus-content h1,
+  .contactus-content .display-5 {
+    font-size: 5rem !important;
+    margin-top: 205px !important;
+    text-align: left !important;
   }
+  .contactform-hero{
+    min-height: 50vh;
+  }
+
   .contactus-form {
-    max-width: 75vw;
-    width: 100%;
+    max-width: 3200px;
+    width: 95%;
+    gap: 56px;
+  }
+
+  .contactus-title {
+    font-size: 3.5rem;
+  }
+
+  .contactus-caption {
+    font-size: 2.2rem;
+  }
+
+  .contactus-input-group label,
+  .form-label {
+    font-size: 32px;
+  }
+
+  .contactus-input-group input,
+  .contactus-input-group textarea,
+  .contactus-form .form-control {
+    font-size: 26px;
+    padding: 24px;
+    border-radius: 14px;
+    min-height: 72px;
+  }
+
+  .contactus-input-group textarea,
+  .contactus-form textarea.form-control {
+    height: 300px;
+    min-height: 240px;
+  }
+
+  .contactus-btn,
+  .contactus-submit-btn {
+    font-size: 1.8rem;
+    padding: 26px 18px;
+    border-radius: 20px;
+  }
+
+  .contactus-grid {
+    gap: 40px 56px;
   }
 }
 
-/* Even larger screens (min-width: 3840px) */
+
+/* =======================================================
+   ULTRA-WIDE / 8K DISPLAYS (3840px+)
+   ======================================================= */
 @media (min-width: 3840px) {
+  .contactus-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+
+   .contactus-content {
+    max-width: 2400px !important;
+    padding: 60px 140px !important;
+  }
+  
+  .contactus-content h1,
+  .contactus-content .display-5 {
+    font-size: 7rem !important;
+    margin-top: 450px !important;
+    text-align: left !important;
+  }
+  
+
   .contactus-form {
-    max-width: 65vw;
-    width: 100%;
+    max-width: 3200px;
+    gap: 64px;
+    padding: 0 80px;
+    min-height: 50%;
+  }
+ .contactform-hero{
+    min-height: 70vh;
+  }
+  .contactus-title {
+    font-size: 5rem;
+  }
+
+  .contactus-caption {
+    font-size: 3rem;
+  }
+
+  .contactus-input-group label,
+  .form-label {
+    font-size: 44px;
+  }
+
+  .contactus-input-group input,
+  .contactus-input-group textarea,
+  .contactus-form .form-control {
+    font-size: 36px;
+    padding: 28px;
+    border-radius: 18px;
+  }
+
+  .contactus-input-group textarea,
+  .contactus-form textarea.form-control {
+    height: 320px;
+  }
+
+  .contactus-btn,
+  .contactus-submit-btn {
+    font-size: 2.4rem;
+    padding: 32px 24px;
+    border-radius: 24px;
+    max-width: 800px;
+  }
+
+  .contactus-grid {
+    gap: 48px 64px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
-@media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 4020px;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
 
-  .contactus-hero{
-    min-height: 85vh;
-  }}
+
+/* =======================================================
+   CONTAINER ADJUSTMENTS (>=1400px)
+   ======================================================= */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 100%;
+    padding-left: clamp(20px, 3vw, 60px);
+    padding-right: clamp(20px, 3vw, 60px);
+  }
+}
+
+
+/* =======================================================
+   PRINT STYLES
+   ======================================================= */
+@media print {
+  .contactus-hero::before,
+  .contactform-hero::after,
+  .contactus-footer-wrapper::before {
+    display: none;
+  }
+
+  .contactus-hero,
+  .contactform-hero {
+    background: #fff;
+    color: #000;
+  }
+}
