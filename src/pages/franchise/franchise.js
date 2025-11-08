@@ -181,7 +181,7 @@ function Franchise() {
 
       {/* Franchise Form Section with Different Background */}
       <div className="franchiseform-hero py-5">
-        <div className="container d-flex justify-content-center">
+        <div className="container-fluid d-flex justify-content-center">
           <form
             ref={formRef}
             className="contactus-form shadow-lg p-4 rounded bg-transparent w-100"
