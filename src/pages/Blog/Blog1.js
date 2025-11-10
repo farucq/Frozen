@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Blog1.css";
@@ -9,40 +9,42 @@ import Footer from "../../layout/footer/footer";
 
 function Blog1() {
   useEffect(() => {
+    // Initialize AOS animations
     AOS.init({
-      duration: 600, // smooth animation speed
-      once: true,    // animate only once
-      easing: "ease-in-out",
-      offset: 100,   // small scroll trigger offset
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: false,
+      mirror: false,
+      offset: 100,
+      delay: 0,
+      anchorPlacement: "center-bottom",
     });
+    AOS.refresh();
   }, []);
 
-  useEffect(() => {
-    // Disable smooth scroll temporarily
-    const html = document.documentElement;
-    const prevBehavior = html.style.scrollBehavior;
-    html.style.scrollBehavior = "auto";
-
-    // Jump instantly to top after mount
-    const timeout = setTimeout(() => {
-      window.scrollTo(0, 0);
-      html.style.scrollBehavior = prevBehavior || "smooth";
-    }, 55);
-
-    return () => clearTimeout(timeout);
+  // ✅ Ensure page starts from top on navigation
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, []);
 
+  // Framer Motion animation for text
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 
   return (
-    <div className="blog1">
+    <motion.div
+      className="blog1"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Hero Section */}
       <div
         className="blog-hero"
@@ -50,7 +52,6 @@ function Blog1() {
           backgroundImage: `url('/assets/images/Blog/Banner1.png')`,
         }}
       >
-        {/* Header */}
         <Header background="#DCADC9" />
 
         {/* Hero Content */}
@@ -68,7 +69,7 @@ function Blog1() {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.4 }}
           >
             Play the Fruit Challenge game, grab scratch cards, and win indulgent
             treats & offers.
@@ -79,25 +80,37 @@ function Blog1() {
       {/* Content Section */}
       <section className="content-section">
         <div className="container">
-
           {/* Section 1 */}
-          <div className="row align-items-center mb-5">
-            <div
-              className="contentRight col-lg-7 col-md-12 text-start mb-4 mb-lg-0"
-              data-aos="fade-left"
-            >
-              <h3 className="section-title">Where Every Leaf Tells a Story</h3>
-              <p>
-                At Frozen Creamery N’ Garden, every salad is a story of nature’s
+          <div
+            className="row align-items-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
+            <div className="contentRight col-lg-7 col-md-12 text-start mb-4 mb-lg-0">
+              <h3
+                className="section-title"
+                data-aos="fade-right"
+                data-aos-duration="250"
+                data-aos-delay="100"
+              >
+                Where Every Leaf Tells a Story
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="250"
+                data-aos-delay="200"
+              >
+                At Frozen Creamery N' Garden, every salad is a story of nature's
                 simplicity. We partner with local farmers to source the freshest
                 produce — ensuring every ingredient carries the warmth of care
-                and the crispness of the field. Freshness isn’t just a choice —
-                it’s our promise.
+                and the crispness of the field. Freshness isn't just a choice —
+                it's our promise.
               </p>
             </div>
             <div
               className="col-lg-5 col-md-12 text-center"
               data-aos="fade-up"
+              data-aos-duration="250"
             >
               <img
                 src="/assets/images/Blog/img1.png"
@@ -108,10 +121,14 @@ function Blog1() {
           </div>
 
           {/* Section 2 */}
-          <div className="row align-items-center mb-5 flex-lg-row-reverse">
+          <div
+            className="row align-items-center mb-5 flex-lg-row-reverse"
+            data-aos="fade-up"
+          >
             <div
               className="contentLeft col-lg-7 col-md-12 text-start mb-4 mb-lg-0"
               data-aos="fade-right"
+              data-aos-duration="250"
             >
               <h3 className="section-title">
                 Simple Ingredients, Thoughtful Creations
@@ -126,6 +143,7 @@ function Blog1() {
             <div
               className="col-lg-5 col-md-12 text-center"
               data-aos="fade-up"
+              data-aos-duration="250"
             >
               <img
                 src="/assets/images/Blog/img3.png"
@@ -136,24 +154,16 @@ function Blog1() {
           </div>
 
           {/* Section 3 */}
-          <div className="row align-items-center">
+          <div
+            className="row align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="250"
+          >
             <div
               className="contentRight col-lg-7 col-md-12 text-start mb-4 mb-lg-0"
               data-aos="fade-left"
             >
-              <h3 className="section-title d-flex">
-                {/* <span
-                  style={{
-                    fontFamily: "'Dancing Script', cursive",
-                    fontSize: "clamp(2rem, 3vw, 10rem)",
-                    marginRight: "6px",
-                    fontWeight: "900",
-                  }}
-                >
-                  A
-                </span> */}
-                A Bowl Full of Positivity
-              </h3>
+              <h3 className="section-title d-flex">A Bowl Full of Positivity</h3>
               <p>
                 Our salads aren’t just meals — they’re moments of care. Perfect
                 for every mood and moment, they balance taste and wellness
@@ -161,10 +171,7 @@ function Blog1() {
                 where freshness meets emotion in every bite.
               </p>
             </div>
-            <div
-              className="col-lg-5 col-md-12 text-center"
-              data-aos="fade-up"
-            >
+            <div className="col-lg-5 col-md-12 text-center" data-aos="fade-up">
               <img
                 src="/assets/images/Blog/img2.png"
                 className="img-fluid rounded-4 shadow content-img"
@@ -182,7 +189,7 @@ function Blog1() {
         hoverButtonColor="#651243"
         overlay={true}
       />
-    </div>
+    </motion.div>
   );
 }
 
